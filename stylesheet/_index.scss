@@ -1,0 +1,19 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+@media (min-width: 992) {
+  .wrap {
+    position: relative;
+    padding-top: 2.6041vw;
+    display: flex;
+    .main-header {
+      width: 17%;
+      height: 50px;
+      background-color: #fa0;
+    }
+    .index-main {
+      width: 83%;
+    }
+  }
+}

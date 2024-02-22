@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30.9 30.9" style="enable-background:new 0 0 30.9 30.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Ellipse_7_1_);}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:0.8;}
+</style>
+<linearGradient id="Ellipse_7_1_" gradientUnits="userSpaceOnUse" x1="9.3375" y1="17.8401" x2="9.8975" y2="16.9661" gradientTransform="matrix(30.9 0 0 -30.9 -282.15 552.55)">
+	<stop  offset="0" style="stop-color:#3871C8"/>
+	<stop  offset="0" style="stop-color:#863CC6"/>
+	<stop  offset="0.356" style="stop-color:#DB3650"/>
+	<stop  offset="0.736" style="stop-color:#FFA84C"/>
+	<stop  offset="1" style="stop-color:#FFDD55"/>
+</linearGradient>
+<circle id="Ellipse_7" class="st0" cx="15.45" cy="15.45" r="15.45"/>
+<path id="Rectangle_1432" class="st1" d="M11.87,7.72h7.17c2.76,0,5,2.24,5,5v6.31c0,2.76-2.24,5-5,5h-7.17c-2.76,0-5-2.24-5-5
+	v-6.31C6.87,9.96,9.1,7.72,11.87,7.72z"/>
+<ellipse id="Ellipse_5" class="st1" cx="15.45" cy="15.88" rx="3.43" ry="3.86"/>
+<ellipse id="Ellipse_6" class="st2" cx="19.74" cy="11.59" rx="0.86" ry="0.43"/>
+</svg>
