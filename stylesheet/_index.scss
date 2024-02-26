@@ -7,7 +7,67 @@ body {
   overflow: hidden;
   position: absolute;
 }
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  position: absolute;
+  top: -74px;
+  left: 230px;
+}
+.owl-carousel .owl-stage-outer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.owl-dots {
+  opacity: 0;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none !important;
+}
+// swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  opacity: 0;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  background: #333333;
+  opacity: 1;
+  transition: 0.5s;
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #ffff;
+  width: 10px;
+}
+
+//swiper-end
+
+//下拉手機選單
 .drop-menu {
+  z-index: 940857;
   position: absolute;
   top: 0;
   left: 0;
@@ -67,7 +127,11 @@ body {
   }
 }
 .wrap {
+  background-image: url(../src/phone/index/bg.png);
+  background-size: cover;
+  //phone-navbar
   .section-phone-navbar {
+    background-color: #fff;
     padding: 23px 0;
     .phone-navbar-pic {
       width: 21.73913vw;
@@ -122,13 +186,249 @@ body {
       }
     }
   }
+  .section-index-priceDm {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section-index-priceDm-main {
+    width: 74.87922%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section-index-product-main {
+    width: 82.608695%;
+    margin: auto;
+    padding-bottom: 70px;
+    .section-index-product-title {
+      font-size: 30px;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+      padding-bottom: 27px;
+
+      .index-product-pic {
+        width: 28px;
+        margin-right: 20px;
+        img {
+          width: 100%;
+          vertical-align: middle;
+        }
+      }
+      .index-product-seemore {
+        font-size: 20px;
+        color: #1a1311;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border-bottom: 1px solid #1a1311;
+        padding-bottom: 17px;
+        opacity: 1;
+        transition: 0.3s;
+        a {
+          text-decoration: none;
+          color: #1a1311;
+        }
+        &:hover .index-product-arrow {
+          transform: translate(6px, -3px);
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+        .index-product-arrow {
+          width: 14px;
+          margin-right: 13px;
+          margin-left: 12px;
+          opacity: 1;
+          transform: translate(0px, -3px);
+          transition: 0.5s;
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .owl-bike {
+      margin: auto;
+      padding-bottom: 50px;
+      .item {
+        max-width: 342px;
+
+        transition: 0.3s;
+        &:hover .dark-box {
+          opacity: 0;
+        }
+        &:hover {
+          rotate: (5deg);
+        }
+        a {
+          border-radius: 35px;
+          overflow: hidden;
+          text-decoration: none;
+          .dark-box {
+            width: 100%;
+            inset: 0;
+            opacity: 45%;
+            background-color: #644a38;
+            transition: 0.3s;
+          }
+          p {
+            font-size: 25px;
+            font-weight: 800;
+            color: #1a1311;
+            right: 22px;
+            bottom: 22px;
+          }
+        }
+      }
+    }
+  }
+  .index-product-seemore {
+    border-bottom: 1px solid #1a1311;
+    width: fit-content;
+    padding: 0 5px;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 400;
+      color: #1a1311;
+      padding-bottom: 12px;
+    }
+    .index-product-arrow {
+      width: 14px;
+      margin-left: 12px;
+      transform: translateY(-6px);
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .section-index-about {
+    .section-index-about-main {
+      background-color: #fff;
+      width: 100%;
+      padding: 50px 36px;
+      position: relative;
+      padding-bottom: 187px;
+      .rideMotopic {
+        right: 0;
+        bottom: -10%;
+        width: 56.0386vw;
+        min-width: 200px;
+        img {
+          width: 100%;
+        }
+      }
+      .section-index-about-pic {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .section-index-about-content {
+        width: 100%;
+        padding-top: 40px;
+        .index-product-seemore {
+          margin: auto;
+          margin-top: 170px;
+        }
+        .section-index-about-title {
+          margin-bottom: 1em;
+          h3 {
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+          }
+          .section-index-about-icon {
+            width: 23px;
+            margin-right: 20px;
+            img {
+              width: 100%;
+              vertical-align: bottom;
+            }
+          }
+        }
+        p {
+          font-size: 20px;
+          letter-spacing: 0.6px;
+          font-weight: 500;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+  //footer 資訊
+  .phone-footer-main {
+    border-top: 1px solid #333333;
+    width: 82.1256%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+  .phone-footer-logo,
+  .phone-footer-qcode {
+    width: 106px;
+    margin-bottom: 35px;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+  .footer-profile {
+    padding-left: 0%;
+    > ul {
+      > li {
+        display: flex;
+        margin-bottom: 13px;
+        .profile-pic {
+          width: 16px;
+          margin-right: 8px;
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+        a {
+          font-weight: 600;
+          font-size: 17px;
+          color: #1a1311;
+          letter-spacing: 0.8px;
+          text-decoration: none;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
 }
+
+.section-copyright {
+  p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-weight: 700;
+
+    a {
+      text-decoration: none;
+      color: #1a1311;
+    }
+  }
+}
+
 @media (min-width: 992px) {
+  .owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: -188px;
+    left: 230px;
+  }
   .wrap {
     position: relative;
     padding-top: 2.6041vw;
     width: 100%;
     display: flex;
+    background-image: none;
     .search-bar {
       display: flex;
       justify-content: center;
@@ -160,13 +460,17 @@ body {
         }
       }
     }
+    .nav-sticky-box {
+      width: 100%;
+    }
     .main-header {
       width: 17%;
       position: sticky;
       top: 0;
       left: 0;
+      height: fit-content;
       .logobox {
-        padding-bottom: 57px;
+        padding-bottom: 30px;
         .logo-pic {
           width: 61.818181%;
           margin: auto;
@@ -183,6 +487,9 @@ body {
             width: 100%;
             position: relative;
             z-index: 1;
+            display: flex;
+            align-items: center;
+            padding-left: 27%;
             &::before {
               content: "";
               display: block;
@@ -205,10 +512,9 @@ body {
               letter-spacing: 1px;
               color: #1a1311;
               padding: 0.8em 0;
-              display: flex;
-              align-items: center;
+              display: block;
               text-decoration: none;
-              text-indent: 4.5em;
+              margin-left: 0.8em;
             }
           }
         }
@@ -297,6 +603,126 @@ body {
     }
     .index-main {
       width: 83%;
+      background-image: url(../src/web/index/bg.png);
+      z-index: 1;
+    }
+    .section-index-priceDm-main {
+      width: 68.1761%;
+      margin: auto;
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+    .section-index-product-main {
+      width: 70.83333%;
+      margin: auto;
+      .section-index-product-title {
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        padding-bottom: 53px;
+
+        .index-product-pic {
+          width: 28px;
+          margin-right: 20px;
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+        .index-product-seemore {
+          font-size: 20px;
+          color: #1a1311;
+          font-weight: 400;
+          letter-spacing: 1px;
+          text-decoration: none;
+          border-bottom: 1px solid #1a1311;
+          padding-bottom: 17px;
+          opacity: 1;
+          transition: 0.3s;
+          a {
+            text-decoration: none;
+            color: #1a1311;
+          }
+          &:hover .index-product-arrow {
+            transform: translate(6px, -7px);
+          }
+          &:hover {
+            opacity: 0.5;
+          }
+          .index-product-arrow {
+            width: 14px;
+            margin-right: 13px;
+            margin-left: 12px;
+            opacity: 1;
+            transform: translate(0px, -7px);
+            transition: 0.5s;
+            img {
+              width: 100%;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .owl-bike {
+        margin: auto;
+        padding-bottom: 63px;
+        .item {
+          max-width: 400px;
+        }
+      }
+    }
+    .section-index-about {
+      .section-index-about-main {
+        width: 73.95833%;
+        padding: 55px 0px;
+        position: relative;
+        .rideMotopic {
+          right: -5%;
+          bottom: -23%;
+          width: 350px;
+          min-width: 200px;
+          img {
+            width: 100%;
+          }
+        }
+        .section-index-about-pic {
+          width: 55%;
+          img {
+            width: 100%;
+          }
+        }
+        .section-index-about-content {
+          width: 45%;
+          padding-top: 95px;
+          padding-left: 5%;
+          .index-product-seemore {
+            margin-top: 170px;
+            margin-right: auto;
+          }
+          .section-index-about-title {
+            margin-bottom: 1em;
+            h3 {
+              font-size: 40px;
+
+              letter-spacing: 1.5px;
+            }
+            .section-index-about-icon {
+              width: 25px;
+              margin-right: 20px;
+              img {
+                width: 100%;
+                vertical-align: bottom;
+              }
+            }
+          }
+          p {
+            font-size: 20px;
+            letter-spacing: 0.6px;
+            font-weight: 500;
+            line-height: 1.6;
+          }
+        }
+      }
     }
   }
 }
