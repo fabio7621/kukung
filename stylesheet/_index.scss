@@ -10,7 +10,7 @@ body {
 .owl-theme .owl-nav {
   margin-top: 10px;
   position: absolute;
-  top: -74px;
+  top: -76px;
   left: 230px;
 }
 .owl-carousel .owl-stage-outer {
@@ -126,6 +126,32 @@ body {
     }
   }
 }
+//查看更多
+.index-watchMore {
+  width: fit-content;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1a1311;
+  padding: 0 14px;
+  padding-bottom: 10px;
+  a {
+    color: #1a1311;
+    font-size: 20px;
+    margin-right: 0.6em;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .index-watchMore-pic {
+    width: 14px;
+    transform: translate(0px, -0px);
+    transition: 0.3s;
+    img {
+      width: 100%;
+    }
+  }
+}
 .wrap {
   background-image: url(../src/phone/index/bg.png);
   background-size: cover;
@@ -214,39 +240,6 @@ body {
           vertical-align: middle;
         }
       }
-      .index-product-seemore {
-        font-size: 20px;
-        color: #1a1311;
-        font-weight: 400;
-        letter-spacing: 1px;
-        text-decoration: none;
-        border-bottom: 1px solid #1a1311;
-        padding-bottom: 17px;
-        opacity: 1;
-        transition: 0.3s;
-        a {
-          text-decoration: none;
-          color: #1a1311;
-        }
-        &:hover .index-product-arrow {
-          transform: translate(6px, -3px);
-        }
-        &:hover {
-          opacity: 0.5;
-        }
-        .index-product-arrow {
-          width: 14px;
-          margin-right: 13px;
-          margin-left: 12px;
-          opacity: 1;
-          transform: translate(0px, -3px);
-          transition: 0.5s;
-          img {
-            width: 100%;
-            vertical-align: middle;
-          }
-        }
-      }
     }
     .owl-bike {
       margin: auto;
@@ -283,27 +276,6 @@ body {
       }
     }
   }
-  .index-product-seemore {
-    border-bottom: 1px solid #1a1311;
-    width: fit-content;
-    padding: 0 5px;
-    a {
-      text-decoration: none;
-      font-size: 20px;
-      letter-spacing: 2px;
-      font-weight: 400;
-      color: #1a1311;
-      padding-bottom: 12px;
-    }
-    .index-product-arrow {
-      width: 14px;
-      margin-left: 12px;
-      transform: translateY(-6px);
-      img {
-        width: 100%;
-      }
-    }
-  }
   .section-index-about {
     .section-index-about-main {
       background-color: #fff;
@@ -329,12 +301,35 @@ body {
       .section-index-about-content {
         width: 100%;
         padding-top: 40px;
-        .index-product-seemore {
-          margin: auto;
+        .index-about-watchMore {
+          width: fit-content;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #1a1311;
+          padding: 0 14px;
+          padding-bottom: 10px;
           margin-top: 170px;
+          a {
+            color: #1a1311;
+            font-size: 20px;
+            margin-right: 0.6em;
+            font-weight: 500;
+            text-decoration: none;
+            display: block;
+            opacity: 1;
+            transition: 0.3s;
+          }
+          .index-about-watchMore-pic {
+            width: 14px;
+            transform: translate(0px, -0px);
+            transition: 0.3s;
+            img {
+              width: 100%;
+            }
+          }
         }
         .section-index-about-title {
           margin-bottom: 1em;
+
           h3 {
             font-size: 30px;
             font-weight: 600;
@@ -402,12 +397,52 @@ body {
   }
 }
 
+//old methods write
+
+.section-index-servie {
+  padding-top: 260px;
+  padding-bottom: 200px;
+  .mySwiper {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  .section-index-servie-title {
+    width: 86%;
+    margin: auto;
+    .servie-title-pic {
+      width: 28px;
+      img {
+        width: 100%;
+      }
+    }
+    h3 {
+      font-size: 40px;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+      margin-left: 0.5em;
+    }
+  }
+  .swiper-pagination-bullet {
+    background-color: #9cb5ed;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #4e76cf;
+    width: 10px;
+  }
+}
+
 .section-copyright {
+  text-align: center;
+  border-top: 1px solid #1a1311;
   p {
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     line-height: 1.6;
-    font-weight: 700;
+    font-weight: 500;
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     a {
       text-decoration: none;
@@ -420,8 +455,40 @@ body {
   .owl-theme .owl-nav {
     margin-top: 10px;
     position: absolute;
-    top: -188px;
+    top: -100px;
     left: 230px;
+  }
+  //查看更多
+  .index-watchMore {
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1a1311;
+    padding: 0 14px;
+    &:hover a {
+      opacity: 0.45;
+    }
+    &:hover .index-watchMore-pic {
+      transform: translate(5px, -10px);
+      opacity: 0.45;
+    }
+    a {
+      color: #1a1311;
+      font-size: 20px;
+      margin-right: 0.6em;
+      font-weight: 500;
+      text-decoration: none;
+      display: block;
+      opacity: 1;
+      transition: 0.3s;
+    }
+    .index-watchMore-pic {
+      width: 14px;
+      transform: translate(0px, -10px);
+      transition: 0.3s;
+      img {
+        width: 100%;
+      }
+    }
   }
   .wrap {
     position: relative;
@@ -629,39 +696,6 @@ body {
             vertical-align: middle;
           }
         }
-        .index-product-seemore {
-          font-size: 20px;
-          color: #1a1311;
-          font-weight: 400;
-          letter-spacing: 1px;
-          text-decoration: none;
-          border-bottom: 1px solid #1a1311;
-          padding-bottom: 17px;
-          opacity: 1;
-          transition: 0.3s;
-          a {
-            text-decoration: none;
-            color: #1a1311;
-          }
-          &:hover .index-product-arrow {
-            transform: translate(6px, -7px);
-          }
-          &:hover {
-            opacity: 0.5;
-          }
-          .index-product-arrow {
-            width: 14px;
-            margin-right: 13px;
-            margin-left: 12px;
-            opacity: 1;
-            transform: translate(0px, -7px);
-            transition: 0.5s;
-            img {
-              width: 100%;
-              vertical-align: middle;
-            }
-          }
-        }
       }
       .owl-bike {
         margin: auto;
@@ -673,7 +707,7 @@ body {
     }
     .section-index-about {
       .section-index-about-main {
-        width: 73.95833%;
+        width: 89.30817%;
         padding: 55px 0px;
         position: relative;
         .rideMotopic {
@@ -695,12 +729,43 @@ body {
           width: 45%;
           padding-top: 95px;
           padding-left: 5%;
-          .index-product-seemore {
-            margin-top: 170px;
+          .index-about-watchMore {
+            width: fit-content;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #1a1311;
+            padding: 0 14px;
+            padding-bottom: 10px;
             margin-right: auto;
+            margin-top: 215px;
+            &:hover a {
+              opacity: 0.45;
+            }
+            &:hover .index-about-watchMore-pic {
+              transform: translate(5px, 0px);
+              opacity: 0.45;
+            }
+            a {
+              color: #1a1311;
+              font-size: 20px;
+              margin-right: 0.6em;
+              font-weight: 500;
+              text-decoration: none;
+              display: block;
+              opacity: 1;
+              transition: 0.3s;
+            }
+            .index-about-watchMore-pic {
+              width: 14px;
+              transform: translate(0px, -0px);
+              transition: 0.3s;
+              img {
+                width: 100%;
+              }
+            }
           }
           .section-index-about-title {
             margin-bottom: 1em;
+
             h3 {
               font-size: 40px;
 
@@ -722,6 +787,60 @@ body {
             line-height: 1.6;
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 8px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 8px;
+  }
+
+  .section-index-servie {
+    padding-top: 260px;
+    padding-bottom: 57px;
+    .mySwiper {
+      width: 85%;
+      margin: auto;
+      padding-bottom: 16px;
+      padding-top: 20px;
+    }
+    .section-index-servie-title {
+      width: 86%;
+      margin: auto;
+      .servie-title-pic {
+        width: 28px;
+        img {
+          width: 100%;
+        }
+      }
+      h3 {
+        font-size: 30px;
+      }
+    }
+    .swiper-pagination-bullet {
+      background-color: #9cb5ed;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: var(--swiper-pagination-bullet-opacity, 1);
+      background: #4e76cf;
+      width: 10px;
+    }
+  }
+  .section-copyright {
+    p {
+      font-size: 17px;
+      letter-spacing: 0.5px;
+      line-height: 1.6;
+      font-weight: 700;
+
+      a {
+        text-decoration: none;
+        color: #1a1311;
       }
     }
   }

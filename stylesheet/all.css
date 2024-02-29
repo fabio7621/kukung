@@ -17,7 +17,7 @@ body {
 .owl-theme .owl-nav {
   margin-top: 10px;
   position: absolute;
-  top: -74px;
+  top: -76px;
   left: 230px;
 }
 
@@ -137,6 +137,33 @@ body {
   color: #1a1311;
 }
 
+.index-watchMore {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1a1311;
+  padding: 0 14px;
+  padding-bottom: 10px;
+}
+.index-watchMore a {
+  color: #1a1311;
+  font-size: 20px;
+  margin-right: 0.6em;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  opacity: 1;
+  transition: 0.3s;
+}
+.index-watchMore .index-watchMore-pic {
+  width: 14px;
+  transform: translate(0px, 0px);
+  transition: 0.3s;
+}
+.index-watchMore .index-watchMore-pic img {
+  width: 100%;
+}
+
 .wrap {
   background-image: url(../src/phone/index/bg.png);
   background-size: cover;
@@ -229,39 +256,6 @@ body {
   width: 100%;
   vertical-align: middle;
 }
-.wrap .section-index-product-main .section-index-product-title .index-product-seemore {
-  font-size: 20px;
-  color: #1a1311;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-decoration: none;
-  border-bottom: 1px solid #1a1311;
-  padding-bottom: 17px;
-  opacity: 1;
-  transition: 0.3s;
-}
-.wrap .section-index-product-main .section-index-product-title .index-product-seemore a {
-  text-decoration: none;
-  color: #1a1311;
-}
-.wrap .section-index-product-main .section-index-product-title .index-product-seemore:hover .index-product-arrow {
-  transform: translate(6px, -3px);
-}
-.wrap .section-index-product-main .section-index-product-title .index-product-seemore:hover {
-  opacity: 0.5;
-}
-.wrap .section-index-product-main .section-index-product-title .index-product-seemore .index-product-arrow {
-  width: 14px;
-  margin-right: 13px;
-  margin-left: 12px;
-  opacity: 1;
-  transform: translate(0px, -3px);
-  transition: 0.5s;
-}
-.wrap .section-index-product-main .section-index-product-title .index-product-seemore .index-product-arrow img {
-  width: 100%;
-  vertical-align: middle;
-}
 .wrap .section-index-product-main .owl-bike {
   margin: auto;
   padding-bottom: 50px;
@@ -295,28 +289,6 @@ body {
   right: 22px;
   bottom: 22px;
 }
-.wrap .index-product-seemore {
-  border-bottom: 1px solid #1a1311;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0 5px;
-}
-.wrap .index-product-seemore a {
-  text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 400;
-  color: #1a1311;
-  padding-bottom: 12px;
-}
-.wrap .index-product-seemore .index-product-arrow {
-  width: 14px;
-  margin-left: 12px;
-  transform: translateY(-6px);
-}
-.wrap .index-product-seemore .index-product-arrow img {
-  width: 100%;
-}
 .wrap .section-index-about .section-index-about-main {
   background-color: #fff;
   width: 100%;
@@ -343,9 +315,32 @@ body {
   width: 100%;
   padding-top: 40px;
 }
-.wrap .section-index-about .section-index-about-main .section-index-about-content .index-product-seemore {
-  margin: auto;
+.wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1a1311;
+  padding: 0 14px;
+  padding-bottom: 10px;
   margin-top: 170px;
+}
+.wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore a {
+  color: #1a1311;
+  font-size: 20px;
+  margin-right: 0.6em;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  opacity: 1;
+  transition: 0.3s;
+}
+.wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore .index-about-watchMore-pic {
+  width: 14px;
+  transform: translate(0px, 0px);
+  transition: 0.3s;
+}
+.wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore .index-about-watchMore-pic img {
+  width: 100%;
 }
 .wrap .section-index-about .section-index-about-main .section-index-about-content .section-index-about-title {
   margin-bottom: 1em;
@@ -410,11 +405,51 @@ body {
   line-height: 1.2;
 }
 
+.section-index-servie {
+  padding-top: 260px;
+  padding-bottom: 200px;
+}
+.section-index-servie .mySwiper {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.section-index-servie .section-index-servie-title {
+  width: 86%;
+  margin: auto;
+}
+.section-index-servie .section-index-servie-title .servie-title-pic {
+  width: 28px;
+}
+.section-index-servie .section-index-servie-title .servie-title-pic img {
+  width: 100%;
+}
+.section-index-servie .section-index-servie-title h3 {
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+.section-index-servie .swiper-pagination-bullet {
+  background-color: #9cb5ed;
+}
+.section-index-servie .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #4e76cf;
+  width: 10px;
+}
+
+.section-copyright {
+  text-align: center;
+  border-top: 1px solid #1a1311;
+}
 .section-copyright p {
-  font-size: 17px;
+  font-size: 20px;
   letter-spacing: 0.5px;
   line-height: 1.6;
-  font-weight: 700;
+  font-weight: 500;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .section-copyright p a {
   text-decoration: none;
@@ -425,8 +460,40 @@ body {
   .owl-theme .owl-nav {
     margin-top: 10px;
     position: absolute;
-    top: -188px;
+    top: -100px;
     left: 230px;
+  }
+  .index-watchMore {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1a1311;
+    padding: 0 14px;
+  }
+  .index-watchMore:hover a {
+    opacity: 0.45;
+  }
+  .index-watchMore:hover .index-watchMore-pic {
+    transform: translate(5px, -10px);
+    opacity: 0.45;
+  }
+  .index-watchMore a {
+    color: #1a1311;
+    font-size: 20px;
+    margin-right: 0.6em;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .index-watchMore .index-watchMore-pic {
+    width: 14px;
+    transform: translate(0px, -10px);
+    transition: 0.3s;
+  }
+  .index-watchMore .index-watchMore-pic img {
+    width: 100%;
   }
   .wrap {
     position: relative;
@@ -636,39 +703,6 @@ body {
     width: 100%;
     vertical-align: middle;
   }
-  .wrap .section-index-product-main .section-index-product-title .index-product-seemore {
-    font-size: 20px;
-    color: #1a1311;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-decoration: none;
-    border-bottom: 1px solid #1a1311;
-    padding-bottom: 17px;
-    opacity: 1;
-    transition: 0.3s;
-  }
-  .wrap .section-index-product-main .section-index-product-title .index-product-seemore a {
-    text-decoration: none;
-    color: #1a1311;
-  }
-  .wrap .section-index-product-main .section-index-product-title .index-product-seemore:hover .index-product-arrow {
-    transform: translate(6px, -7px);
-  }
-  .wrap .section-index-product-main .section-index-product-title .index-product-seemore:hover {
-    opacity: 0.5;
-  }
-  .wrap .section-index-product-main .section-index-product-title .index-product-seemore .index-product-arrow {
-    width: 14px;
-    margin-right: 13px;
-    margin-left: 12px;
-    opacity: 1;
-    transform: translate(0px, -7px);
-    transition: 0.5s;
-  }
-  .wrap .section-index-product-main .section-index-product-title .index-product-seemore .index-product-arrow img {
-    width: 100%;
-    vertical-align: middle;
-  }
   .wrap .section-index-product-main .owl-bike {
     margin: auto;
     padding-bottom: 63px;
@@ -677,7 +711,7 @@ body {
     max-width: 400px;
   }
   .wrap .section-index-about .section-index-about-main {
-    width: 73.95833%;
+    width: 89.30817%;
     padding: 55px 0px;
     position: relative;
   }
@@ -701,9 +735,40 @@ body {
     padding-top: 95px;
     padding-left: 5%;
   }
-  .wrap .section-index-about .section-index-about-main .section-index-about-content .index-product-seemore {
-    margin-top: 170px;
+  .wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1a1311;
+    padding: 0 14px;
+    padding-bottom: 10px;
     margin-right: auto;
+    margin-top: 215px;
+  }
+  .wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore:hover a {
+    opacity: 0.45;
+  }
+  .wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore:hover .index-about-watchMore-pic {
+    transform: translate(5px, 0px);
+    opacity: 0.45;
+  }
+  .wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore a {
+    color: #1a1311;
+    font-size: 20px;
+    margin-right: 0.6em;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore .index-about-watchMore-pic {
+    width: 14px;
+    transform: translate(0px, 0px);
+    transition: 0.3s;
+  }
+  .wrap .section-index-about .section-index-about-main .section-index-about-content .index-about-watchMore .index-about-watchMore-pic img {
+    width: 100%;
   }
   .wrap .section-index-about .section-index-about-main .section-index-about-content .section-index-about-title {
     margin-bottom: 1em;
@@ -725,5 +790,360 @@ body {
     letter-spacing: 0.6px;
     font-weight: 500;
     line-height: 1.6;
+  }
+}
+@media (max-width: 991px) {
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 8px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 8px;
+  }
+  .section-index-servie {
+    padding-top: 260px;
+    padding-bottom: 57px;
+  }
+  .section-index-servie .mySwiper {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 16px;
+    padding-top: 20px;
+  }
+  .section-index-servie .section-index-servie-title {
+    width: 86%;
+    margin: auto;
+  }
+  .section-index-servie .section-index-servie-title .servie-title-pic {
+    width: 28px;
+  }
+  .section-index-servie .section-index-servie-title .servie-title-pic img {
+    width: 100%;
+  }
+  .section-index-servie .section-index-servie-title h3 {
+    font-size: 30px;
+  }
+  .section-index-servie .swiper-pagination-bullet {
+    background-color: #9cb5ed;
+  }
+  .section-index-servie .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #4e76cf;
+    width: 10px;
+  }
+  .section-copyright p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+  .section-copyright p a {
+    text-decoration: none;
+    color: #1a1311;
+  }
+}
+.section-bread .section-bread-main {
+  width: 79.874213%;
+  margin: auto;
+}
+.section-bread .section-bread-main .bread-list {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+.section-bread .section-bread-main .bread-list li {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.section-bread .section-bread-main .bread-list li + li {
+  margin-left: 10px;
+}
+.section-bread .section-bread-main .bread-list li a {
+  text-decoration: none;
+  padding: 1em 0;
+  display: block;
+}
+.section-bread .section-bread-main .section-bread-pic {
+  width: 20px;
+}
+.section-bread .section-bread-main .section-bread-pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.section-page-content .section-page-article-main {
+  width: 79.874213%;
+  margin: auto;
+  padding-bottom: 200px;
+}
+.section-page-content .section-page-article-main .page-article-box {
+  width: 100%;
+  padding-bottom: 180px;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-title {
+  padding: 35px 0;
+  border-bottom: 1px dashed #1a1311;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-title h3 {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-title .article-title-icon {
+  margin-right: 1em;
+  width: 28px;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-title .article-title-icon img {
+  width: 100%;
+  vertical-align: middle;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-content {
+  padding: 2rem 2rem 0px 2rem;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-content h4 {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1.75px;
+  margin-bottom: 0.8em;
+  line-height: 1.6;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-content p {
+  font-size: 20px;
+  margin-bottom: 1em;
+  letter-spacing: 1.25px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.section-page-content .page-article-content-bigPic {
+  padding-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .section-bread .section-bread-main {
+    width: 82.608695%;
+  }
+  .section-bread .section-bread-main .bread-list li {
+    font-size: 13px;
+  }
+  .section-bread .section-bread-main .bread-list li + li {
+    margin-left: 10px;
+  }
+  .section-bread .section-bread-main .bread-list li a {
+    text-decoration: none;
+    padding: 1em 0;
+    display: block;
+  }
+  .section-bread .section-bread-main .section-bread-pic {
+    width: 14px;
+  }
+}
+.section-page-content .section-page-article-main {
+  width: 82.608695%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.section-page-content .section-page-article-main .page-article-box {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-title {
+  padding: 20px 0;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-title h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-title .article-title-icon {
+  width: 28px;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-content {
+  padding: 1rem 0;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-content h4 {
+  font-size: 30px;
+}
+.section-page-content .section-page-article-main .page-article-box .section-page-article-content p {
+  font-size: 20px;
+}
+.section-page-content .page-article-content-bigPic {
+  padding-top: 65px;
+}
+
+.section-product-nav {
+  padding: 14.5px 0;
+  width: 100%;
+  border-top: 1px dashed #1a1311;
+  border-bottom: 1px dashed #1a1311;
+}
+.section-product-nav > ul {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-product-nav > ul li + li {
+  border-left: 1px dashed #1a1311;
+}
+.section-product-nav > ul li:last-child {
+  border-right: 1px dashed #1a1311;
+}
+.section-product-nav > ul li:first-child {
+  border-left: 1px dashed #1a1311;
+}
+.section-product-nav > ul li a {
+  font-size: 22px;
+  color: #1a1311;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  padding: 23px 35px;
+}
+
+.menu-list-phone .accordion-button::after {
+  display: none;
+}
+.menu-list-phone .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.menu-list-phone .phone-menu-item:first-child .accordion-button {
+  border-bottom: 1px dashed #1a1311;
+}
+.menu-list-phone .phone-menu-item + .phone-menu-item {
+  transform: translateY(-2px);
+  border-top: 1px dashed #1a1311;
+}
+.menu-list-phone .accordion-item {
+  border-radius: 0;
+}
+.menu-list-phone .menu-list-title {
+  background-color: #1a1311;
+}
+.menu-list-phone .menu-list-title p {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: auto;
+}
+.menu-list-phone .menu-list-item p {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1a1311;
+  margin: auto;
+}
+.menu-list-phone .menu-list-body > ul > li a {
+  display: block;
+  font-size: 20px;
+  color: #1a1311;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.booking-list {
+  padding-top: 60px;
+  padding-bottom: 580px;
+}
+.booking-list .booking-item {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.booking-list .booking-item:hover .booking-item-pic img {
+  transform: scale(1.2);
+}
+.booking-list .booking-item:hover .booking-item-pic .dark-book-two {
+  background-color: rgba(26, 19, 17, 0.368627451);
+}
+.booking-list .booking-item p {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-top: 1em;
+}
+.booking-list .booking-item .booking-item-pic {
+  border-radius: 33px;
+  overflow: hidden;
+  position: relative;
+}
+.booking-list .booking-item .booking-item-pic img {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.2s;
+}
+.booking-list .booking-item .booking-item-pic .dark-book-two {
+  width: 100%;
+  inset: 0;
+  background-color: rgba(26, 19, 17, 0);
+  cursor: pointer;
+}
+.booking-list .booking-item .booking-item-pic .dark-book-two:hover .dark-book-pic {
+  opacity: 1;
+}
+.booking-list .booking-item .booking-item-pic .dark-book-two .dark-book-pic {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+}
+.booking-list .booking-item .booking-item-pic .dark-book-two .dark-book-pic img {
+  width: 100%;
+}
+
+.booking-charge {
+  padding-top: 67px;
+  margin-bottom: 50px;
+}
+
+.booking-back-btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 100px;
+  border-bottom: 1px solid #1a1311;
+}
+.booking-back-btn:hover a {
+  padding: 0 40px 0 38px;
+}
+.booking-back-btn a {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #1a1311;
+  padding: 0 28px;
+  transition: 0.2s;
+}
+.booking-back-btn .back-btn-pic {
+  width: 61px;
+}
+.booking-back-btn .back-btn-pic img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .booking-list {
+    padding-top: 0px;
+    padding-bottom: 132px;
+  }
+  .booking-list .booking-item {
+    border-radius: 33px;
+  }
+  .booking-list .booking-item p {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-top: 1em;
+  }
+  .booking-list .booking-item .booking-item-pic img {
+    width: 100%;
+  }
+  .booking-back-btn a {
+    padding: 0 20px;
+  }
+  .booking-back-btn .back-btn-pic {
+    width: 40px;
   }
 }/*# sourceMappingURL=all.css.map */

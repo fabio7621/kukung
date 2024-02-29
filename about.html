@@ -17,32 +17,6 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <!-- ................ -->
     <link rel="stylesheet" href="./stylesheet/all.css" />
-
-    <style>
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .swiper-button-next:after,
-      .swiper-button-prev:after {
-        opacity: 0;
-      }
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
 
   <body>
@@ -164,297 +138,144 @@
           </ul>
         </div>
       </section>
-      <!-- 內文主區塊 -->
+
       <main class="index-main">
-        <section class="index-carousel">
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/web_banner1.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/phone_banner1.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/web_banner2.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/phone_banner2.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/web_banner3.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/phone_banner3.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
+        <!-- 內文主區塊 -->
+        <section class="page-main-banner">
+          <img
+            class="w-100 d-none d-md-block"
+            src="./src/web/about/about_banner.png"
+            alt=""
+          />
+          <img
+            class="w-100 d-block d-md-none"
+            src="./src/phone/about/about_banner.png"
+            alt=""
+          />
         </section>
-        <section class="section-index-priceDm container-fluid">
-          <div class="section-index-priceDm-main row">
-            <div class="col-12 p-0">
-              <div class="priceDm-pic">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/pic_1.png"
-                  alt="dm"
-                />
-              </div>
-              <img
-                class="w-100 d-block d-md-none"
-                src="./src/phone/index/pic_1.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-        <section class="section-index-product">
-          <div class="section-index-product-main">
-            <div class="section-index-product-title d-flex align-items-center">
-              <div class="index-product-pic">
-                <img class="me-1" src="./src/web/icon/motorcycle.svg" alt="" />
-              </div>
-              <h3>熱門車款</h3>
-              <div
-                class="index-watchMore d-none d-md-flex align-items-center ms-auto"
-              >
-                <a href="#">查看更多</a>
-                <div class="index-watchMore-pic">
-                  <img src="./src/web/icon/arrow_3.svg" alt="" />
+        <section class="section-bread">
+          <div class="section-bread-main">
+            <ol class="bread-list d-flex align-items-center">
+              <li class="bread-list-item">
+                <div class="section-bread-pic">
+                  <img width="20" src="./src/web/icon/home.svg" alt="" />
                 </div>
-              </div>
-            </div>
-            <div class="owl-bike owl-carousel owl-theme">
-              <div class="item text-decoration-none">
-                <a
-                  class="position-relative d-block text-decoration-none"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="./src/web/index/pic_cuxi115_1.png"
-                    alt=""
-                  />
-                  <div class="dark-box position-absolute"></div>
-                  <p class="position-absolute">CUXI 紫 115</p>
-                </a>
-              </div>
-              <div class="item">
-                <a
-                  class="position-relative d-block text-decoration-none"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="./src/web/index/pic_cygnus_4.png"
-                    alt=""
-                  />
-                  <div class="dark-box position-absolute"></div>
-                  <p class="position-absolute">競戰四代 紅125</p>
-                </a>
-              </div>
-              <div class="item">
-                <a
-                  class="position-relative d-block text-decoration-none"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="./src/web/index/pic_fsjog115_2.png"
-                    alt=""
-                  />
-                  <div class="dark-box position-absolute"></div>
-                  <p class="position-absolute">FS JOG 115</p>
-                </a>
-              </div>
-              <div class="item">
-                <a
-                  class="position-relative d-block text-decoration-none"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="./src/web/index/pic_gp125_5.png"
-                    alt=""
-                  />
-                  <div class="dark-box position-absolute"></div>
-                  <p class="position-absolute">GP 125白</p>
-                </a>
-              </div>
-              <div class="item">
-                <a
-                  class="position-relative d-block text-decoration-none"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="./src/web/index/pic_gp125_6.png"
-                    alt=""
-                  />
-                  <div class="dark-box position-absolute"></div>
-                  <p class="position-absolute">GP 125 黑紅</p>
-                </a>
-              </div>
-              <div class="item">
-                <a
-                  class="position-relative d-block text-decoration-none"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="./src/web/index/pic_newcuxi115_3.png"
-                    alt=""
-                  />
-                  <div class="dark-box position-absolute"></div>
-                  <p class="position-absolute">NEW CUXI 115</p>
-                </a>
-              </div>
-            </div>
-            <div
-              class="index-watchMore d-flex d-md-none align-items-center mx-auto"
-            >
-              <a href="#">查看更多</a>
-              <div class="index-watchMore-pic">
-                <img src="./src/web/icon/arrow_3.svg" alt="" />
-              </div>
-            </div>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>關於國光</a>
+              </li>
+            </ol>
           </div>
         </section>
-        <section class="section-index-about">
-          <div class="section-index-about-main d-flex flex-wrap">
-            <div class="section-index-about-pic">
-              <img
-                class="w-100 d-block d-md-none"
-                src="./src/phone/index/pic_2.png"
-              />
-              <img
-                class="w-100 d-none d-md-block"
-                src="./src/web/index/pic_2.png"
-              />
-            </div>
-            <div class="section-index-about-content">
-              <div
-                class="section-index-about-title d-flex align-items-center flex-wrap"
-              >
-                <div class="section-index-about-icon">
-                  <img src="./src/web/icon/motorcycle.svg" alt="" />
+        <section class="section-page-content">
+          <article class="section-page-article-main">
+            <!-- 內文區塊 -->
+            <div class="page-article-box">
+              <div class="section-page-article-title d-flex align-items-center">
+                <div class="article-title-icon">
+                  <img
+                    width="28px"
+                    src="./src/web/icon/motorcycle.svg"
+                    alt=""
+                  />
                 </div>
                 <h3>關於國光</h3>
               </div>
-              <p>國光機車出租有優良的團隊為大家服務！</p>
-              <p>本店的每台機車都是合法登記 , 並以最優惠的價格優惠客戶</p>
-              <div
-                class="index-about-watchMore d-flex align-items-center mx-auto mx-md-0 me-md-auto"
-              >
-                <a href="#">查看更多</a>
-                <div class="index-about-watchMore-pic">
-                  <img width="12px" src="./src/web/icon/arrow_3.svg" alt="" />
+              <div class="section-page-article-content">
+                <h4>國光機車出租有優良的團隊為大家服務！</h4>
+                <p>本店的每台機車都是合法登記</p>
+                <p>並以最優惠的價格優惠客戶</p>
+                <p>車況每年都有新進新車型</p>
+                <p>我們有專業技師定期保養機車</p>
+                <p>配置專屬的個人置物櫃</p>
+                <p>有營業級的冷藏置物冰箱</p>
+                <p>每台機車免費隨附拋棄式雨衣及拋棄式安全帽內襯</p>
+              </div>
+            </div>
+            <div class="page-article-box">
+              <div class="section-page-article-title d-flex align-items-center">
+                <div class="article-title-icon">
+                  <img
+                    width="28px"
+                    src="./src/web/icon/motorcycle.svg"
+                    alt=""
+                  />
+                </div>
+                <h3>租車選店五大要件</h3>
+              </div>
+              <div class="section-page-article-content">
+                <div class="page-article-content-bigPic">
+                  <img
+                    class="w-100 d-none d-md-block"
+                    src="./src/web/about/pic_1.png"
+                    alt=""
+                  />
+                  <img
+                    class="w-100 d-block d-md-none"
+                    src="./src/phone/about/pic_1.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
+            <div class="page-article-box">
+              <div class="section-page-article-title d-flex align-items-center">
+                <div class="article-title-icon">
+                  <img
+                    width="28px"
+                    src="./src/web/icon/motorcycle.svg"
+                    alt=""
+                  />
+                </div>
+                <h3>店內環境一覽</h3>
+              </div>
+              <div class="section-page-article-content">
+                <div class="row mt-3">
+                  <div class="col-12 col-md-6 mb-4 mb-md-5">
+                    <div class="page-article-smPic">
+                      <img class="img-fluid" src="./src/web/about/pic_2.png" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-4 mb-md-5">
+                    <div class="page-article-smPic">
+                      <img class="img-fluid" src="./src/web/about/pic_3.png" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-4 mb-md-5">
+                    <div class="page-article-smPic">
+                      <img class="img-fluid" src="./src/web/about/pic_4.png" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-4 mb-md-5">
+                    <div class="page-article-smPic">
+                      <img class="img-fluid" src="./src/web/about/pic_5.png" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-4 mb-md-5">
+                    <div class="page-article-smPic">
+                      <img class="img-fluid" src="./src/web/about/pic_6.png" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-4 mb-md-5">
+                    <div class="page-article-smPic">
+                      <img class="img-fluid" src="./src/web/about/pic_7.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 範例區塊 -->
+            <!-- <div class="section-page-article-title">
+              <h3>標題</h3>
+            </div> -->
+            <!-- <div class="section-page-article-content">
+              <h4>小標題</h4>
+              <p>內文</p>
+            </div> -->
+          </article>
+        </section>
 
-            <div class="rideMotopic position-absolute">
-              <img class="w100" src="./src/web/index/pic_3.png" alt="" />
-            </div>
-          </div>
-        </section>
-        <section class="section-index-servie">
-          <div class="section-index-servie-title d-flex align-items-center">
-            <div class="servie-title-pic">
-              <img width="28px" src="./src/web/icon/motorcycle.svg" />
-            </div>
-            <h3>服務特色</h3>
-          </div>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/pic_4.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/pic_4.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/pic_5.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/pic_5.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/pic_6.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/pic_6.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/pic_7.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/pic_7.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="w-100 d-none d-md-block"
-                  src="./src/web/index/pic_5.png"
-                  alt=""
-                />
-                <img
-                  class="w-100 d-block d-md-none"
-                  src="./src/phone/index/pic_5.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </section>
+        <!-- 內文主區塊end -->
         <!-- 桌機版copyright -->
         <div class="section-copyright d-md-block d-none">
           <p>
