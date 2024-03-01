@@ -90,7 +90,7 @@
       transform: scale(1.2);
     }
     &:hover .booking-item-pic .dark-book-two {
-      background-color: #1a13115e;
+      background-color: #644a3883;
     }
     p {
       font-size: 30px;
@@ -110,7 +110,7 @@
       .dark-book-two {
         width: 100%;
         inset: 0;
-        background-color: #1a131100;
+        background-color: #644a3800;
         cursor: pointer;
         &:hover .dark-book-pic {
           opacity: 1;
@@ -240,6 +240,10 @@
       font-weight: 800;
     }
   }
+}
+.booking-list.tainan-list .booking-item p {
+  font-size: 20px;
+  font-weight: 600;
 }
 @media (max-width: 991px) {
   .booking-list {

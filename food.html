@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="國光租車" />
+    <meta name="description" content="國光租車" />
+    <title>國光租車</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./stylesheet/all.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1 class="sr-only"></h1>
+      <!-- 手機板 navbar -->
+      <section class="section-phone-navbar d-md-none d-flex align-items-center">
+        <div class="phone-navbar-pic">
+          <img src="./src/phone/icon/logo.svg" alt="" />
+        </div>
+        <form class="search-bar">
+          <div
+            class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="form-pic">
+              <img src="./src/web/icon/search.svg" alt="search" />
+            </div>
+          </div>
+          <input placeholder="搜尋車種...." type="text" />
+        </form>
+        <div class="menu-btn-pic" id="openMenu">
+          <img src="./src/phone/icon/menu.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- 桌機板 選單 -->
+      <section class="main-header d-md-block d-none">
+        <div class="logobox w-100">
+          <a class="logo-pic d-block">
+            <img class="w-100" src="./src/web/icon/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <nav class="section-navbar">
+          <ul>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_about.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 關於國光 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_online.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 線上預約 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_place.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 台南景點介紹 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 顧客好評 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_qa.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> Q&A </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_contact.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 聯絡我們 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 網站地圖 </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="section-qCode">
+          <div class="qcode-pic">
+            <img src="./src/web/icon/qr.png" alt="qr" />
+          </div>
+        </div>
+        <div class="section-search">
+          <form class="search-bar">
+            <div
+              class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="form-pic">
+                <img src="./src/web/icon/search.svg" alt="search" />
+              </div>
+            </div>
+            <input placeholder="搜尋車種...." type="text" />
+          </form>
+        </div>
+        <div class="footer-profile d-flex flex-column">
+          <ul>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/tel.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">06-2227000</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">
+                星期一至日<br />
+                早上 9:00 ~ 晚上 10:00
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <main class="index-main">
+        <!-- 內文主區塊 -->
+        <section class="page-main-banner">
+          <img
+            class="w-100 d-none d-md-block"
+            src="./src/web/attractions/attractions_banner.png"
+            alt=""
+          />
+          <img
+            class="w-100 d-block d-md-none"
+            src="./src/phone/attractions/place_banner.png"
+            alt=""
+          />
+        </section>
+        <section class="section-bread">
+          <div class="section-bread-main">
+            <ol class="bread-list d-flex align-items-center">
+              <li class="bread-list-item">
+                <div class="section-bread-pic">
+                  <img width="20" src="./src/web/icon/home.svg" alt="" />
+                </div>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>台南景點介紹</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="section-page-content">
+          <article class="section-page-article-main">
+            <!-- 內文區塊 -->
+            <div class="page-article-box">
+              <div class="section-page-article-title d-flex align-items-center">
+                <div class="article-title-icon">
+                  <img
+                    width="28px"
+                    src="./src/web/icon/motorcycle.svg"
+                    alt=""
+                  />
+                </div>
+                <h3>台南景點介紹</h3>
+              </div>
+              <div class="section-page-article-content">
+                <p>
+                  台南是一個充滿歷史文化魅力的城市, 同時也是台灣美食的樞紐,
+                  這裡有許多令人驚嘆的景點和美食值得一遊,
+                  品嚐台南小吃是遊覽這座城市不可錯過的體驗。
+                </p>
+              </div>
+            </div>
+            <!-- 桌機選單 -->
+            <div class="section-product-nav d-none d-md-block">
+              <ul class="d-md-flex d-none flex mx-auto">
+                <li>
+                  <a href="#">美　食</a>
+                </li>
+                <li>
+                  <a href="#">景　點</a>
+                </li>
+                <li>
+                  <a href="#">民　宿</a>
+                </li>
+              </ul>
+            </div>
+            <!-- 手機選單 -->
+            <div
+              class="accordion menu-list-phone accordion-flush w-100 d-block d-lg-none"
+              id="rwd-main-menu"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed menu-list-title"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseMain"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseMain"
+                  >
+                    <p>分類目錄</p>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseMain"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="menu-list-body accordion-body w-100 p-0">
+                    <div
+                      class="accordion rounded-0 border-0"
+                      id="accordionExample "
+                    >
+                      <!-- 1 -->
+                      <div class="accordion-item phone-menu-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed menu-list-item"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFirst"
+                            aria-expanded="false"
+                            aria-controls="collapseFirst"
+                          >
+                            <p>美　食</p>
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseFirst"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        ></div>
+                      </div>
+
+                      <!-- 3 -->
+                      <div class="accordion-item phone-menu-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed menu-list-item"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            <p>景　點</p>
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        ></div>
+                      </div>
+                      <div class="accordion-item phone-menu-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed menu-list-item"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThird"
+                            aria-expanded="false"
+                            aria-controls="collapseThird"
+                          >
+                            <p>民　宿</p>
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="booking-list tainan-list row">
+              <div class="booking-item col-12 col-md-4 mt-5">
+                <a href="#" class="d-block booking-item-pic">
+                  <img src="./src/web/attractions/food/pic_1.png" />
+                  <div class="position-absolute dark-book-two">
+                    <div class="dark-book-pic">
+                      <img
+                        width="50px"
+                        src="./src/web/icon/on_line_magnifier.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </a>
+                <p class="text-center">悅津鹹粥</p>
+              </div>
+              <div class="booking-item col-12 col-md-4 mt-5">
+                <a href="#" class="d-block booking-item-pic">
+                  <img src="./src/web/attractions/food/pic_2.png" />
+                  <div class="position-absolute dark-book-two">
+                    <div class="dark-book-pic">
+                      <img
+                        width="50px"
+                        src="./src/web/icon/on_line_magnifier.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </a>
+                <p class="text-center">冰　鄉</p>
+              </div>
+              <div class="booking-item col-12 col-md-4 mt-5">
+                <a href="#" class="d-block booking-item-pic">
+                  <img src="./src/web/attractions/food/pic_3.png" />
+                  <div class="position-absolute dark-book-two">
+                    <div class="dark-book-pic">
+                      <img
+                        width="50px"
+                        src="./src/web/icon/on_line_magnifier.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </a>
+                <p class="text-center">阿松刈包</p>
+              </div>
+              <div class="booking-item col-12 col-md-4 mt-5">
+                <a href="#" class="d-block booking-item-pic">
+                  <img src="./src/web/attractions/food/pic_4.png" />
+                  <div class="position-absolute dark-book-two">
+                    <div class="dark-book-pic">
+                      <img
+                        width="50px"
+                        src="./src/web/icon/on_line_magnifier.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </a>
+                <p class="text-center">双生綠豆沙牛奶</p>
+              </div>
+              <div class="booking-item col-12 col-md-4 mt-5">
+                <a href="#" class="d-block booking-item-pic">
+                  <img src="./src/web/attractions/food/pic_5.png" />
+                  <div class="position-absolute dark-book-two">
+                    <div class="dark-book-pic">
+                      <img
+                        width="50px"
+                        src="./src/web/icon/on_line_magnifier.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </a>
+                <p class="text-center">堯　平</p>
+              </div>
+              <div class="booking-item col-12 col-md-4 mt-5">
+                <a href="#" class="d-block booking-item-pic">
+                  <img src="./src/web/attractions/food/pic_6.png" />
+                  <div class="position-absolute dark-book-two">
+                    <div class="dark-book-pic">
+                      <img
+                        width="50px"
+                        src="./src/web/icon/on_line_magnifier.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </a>
+                <p class="text-center">同記安平豆花</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- 內文主區塊end -->
+        <!-- 桌機版copyright -->
+        <div class="section-copyright d-md-block d-none">
+          <p>
+            <span>Copyright 2024</span> &copy;國光機車出租 | 版權所有 Designed
+            by <a href="https://www.renu.com.tw/">Renu</a>
+          </p>
+        </div>
+        <!-- 手機板footer -->
+        <section class="phone-footer d-block d-md-none">
+          <div class="phone-footer-main">
+            <a href="#" class="d-block phone-footer-logo">
+              <img class="w100" src="./src/web/icon/logo.svg" alt="" />
+            </a>
+            <div class="phone-footer-qcode">
+              <img src="./src/phone/icon/qr.png" alt="" />
+            </div>
+            <div class="footer-profile d-flex flex-column">
+              <ul>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/tel.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">06-2227000</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">
+                    星期一至日<br />
+                    早上 9:00 ~ 晚上 10:00
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="section-copyright d-md-none d-block">
+              <p>
+                Copyright 2024 &copy;國光機車出租
+                <br />
+                版權所有 | Designed by
+                <a href="https://www.renu.com.tw/"> Renu</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="drop-menu d-flex flex-column align-items-center">
+      <div class="phone-menu-close-btn" id="closeMenu">
+        <img src="./src/phone/icon/close.svg" alt="close btn" />
+      </div>
+      <div class="phone-menu-logo">
+        <img src="./src/phone/icon/logo.svg" alt="" />
+      </div>
+      <nav class="section-phone-meun">
+        <ul>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_about.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 關於國光 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_online.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 線上預約 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_place.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 台南景點介紹 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 顧客好評 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_qa.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> Q&A </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_contact.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 聯絡我們 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 網站地圖 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- <script src="./js/scroll-top.js"></script> -->
+    <!-- swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+      //手機menu
+      const openBtn = document.getElementById("openMenu");
+      const closeBtn = document.getElementById("closeMenu");
+      const dropMenu = document.querySelector(".drop-menu");
+
+      openBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(0%)";
+      });
+
+      closeBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(-101%)";
+      });
+    </script>
+  </body>
+</html>

@@ -1054,7 +1054,7 @@ body {
   transform: scale(1.2);
 }
 .booking-list .booking-item:hover .booking-item-pic .dark-book-two {
-  background-color: rgba(26, 19, 17, 0.368627451);
+  background-color: rgba(100, 74, 56, 0.5137254902);
 }
 .booking-list .booking-item p {
   font-size: 30px;
@@ -1075,7 +1075,7 @@ body {
 .booking-list .booking-item .booking-item-pic .dark-book-two {
   width: 100%;
   inset: 0;
-  background-color: rgba(26, 19, 17, 0);
+  background-color: rgba(100, 74, 56, 0);
   cursor: pointer;
 }
 .booking-list .booking-item .booking-item-pic .dark-book-two:hover .dark-book-pic {
@@ -1207,6 +1207,11 @@ body {
   color: #1a1311;
   font-size: 22px;
   font-weight: 800;
+}
+
+.booking-list.tainan-list .booking-item p {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {
@@ -1456,11 +1461,6 @@ li.nav-item.nav-item-title {
     margin-top: 40px;
   }
 }
-i,
-span {
-  display: inline;
-}
-
 .section-checkout-tltle {
   margin-top: 45px;
   margin-bottom: 70px;
@@ -1621,6 +1621,7 @@ span {
 }
 
 .checkout-total-btns button {
+  width: 200px;
   border-radius: 4px;
   overflow: hidden;
   border: none;
@@ -1770,6 +1771,24 @@ span {
   color: #fff;
   font-size: 20px;
   padding: 15px 0;
+  position: relative;
+  z-index: 1;
+}
+.checkout-pay-order-btn::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  background-color: #f6534e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease-in;
+  z-index: -1;
+}
+.checkout-pay-order-btn:hover::before {
+  width: 100%;
+  height: 100%;
 }
 
 .checkout-carts-phone {
@@ -1940,6 +1959,7 @@ span {
     font-size: 20px;
     letter-spacing: 1.2px;
     font-weight: 800;
+    line-height: 1.3;
   }
   .section-checkout-order .checkout-order-main .checkout-order-box .section-order-item label span {
     color: #c50500;
