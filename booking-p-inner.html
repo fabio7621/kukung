@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="國光租車" />
+    <meta name="description" content="國光租車" />
+    <title>國光租車</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./stylesheet/all.css" />
+    <style>
+      /* product-swiper-setting */
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next:after,
+      .swiper-rtl .swiper-button-prev:after {
+        content: none !important;
+      }
+      .swiper-button-prev:after,
+      .swiper-rtl .swiper-button-next:after {
+        content: none !important;
+      }
+      .swiper-button-next img,
+      .swiper-button-prev img {
+        vertical-align: top !important;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 40px;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+      @media (width<992px) {
+        /* product-swiper-setting */
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 29px;
+        }
+        .swiper-slide {
+          border-radius: 11px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1 class="sr-only"></h1>
+      <!-- 手機板 navbar -->
+      <section class="section-phone-navbar d-md-none d-flex align-items-center">
+        <div class="phone-navbar-pic">
+          <img src="./src/phone/icon/logo.svg" alt="" />
+        </div>
+        <form class="search-bar">
+          <div
+            class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="form-pic">
+              <img src="./src/web/icon/search.svg" alt="search" />
+            </div>
+          </div>
+          <input placeholder="搜尋車種...." type="text" />
+        </form>
+        <div class="menu-btn-pic" id="openMenu">
+          <img src="./src/phone/icon/menu.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- 桌機板 選單 -->
+      <section class="main-header d-md-block d-none">
+        <div class="logobox w-100">
+          <a class="logo-pic d-block">
+            <img class="w-100" src="./src/web/icon/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <nav class="section-navbar">
+          <ul>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_about.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 關於國光 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_online.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 線上預約 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_place.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 台南景點介紹 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 顧客好評 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_qa.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> Q&A </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_contact.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 聯絡我們 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 網站地圖 </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="section-qCode">
+          <div class="qcode-pic">
+            <img src="./src/web/icon/qr.png" alt="qr" />
+          </div>
+        </div>
+        <div class="section-search">
+          <form class="search-bar">
+            <div
+              class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="form-pic">
+                <img src="./src/web/icon/search.svg" alt="search" />
+              </div>
+            </div>
+            <input placeholder="搜尋車種...." type="text" />
+          </form>
+        </div>
+        <div class="footer-profile d-flex flex-column">
+          <ul>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/tel.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">06-2227000</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">
+                星期一至日<br />
+                早上 9:00 ~ 晚上 10:00
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <main class="index-main">
+        <!-- 內文主區塊 -->
+        <section class="page-main-banner">
+          <img
+            class="w-100 d-none d-md-block"
+            src="./src/web/on_line/on_line_banner.png"
+            alt=""
+          />
+          <img
+            class="w-100 d-block d-md-none"
+            src="./src/phone/on_line/on_line_banner.png"
+            alt=""
+          />
+        </section>
+        <section class="section-bread">
+          <div class="section-bread-main">
+            <ol class="bread-list d-flex align-items-center">
+              <li class="bread-list-item">
+                <div class="section-bread-pic">
+                  <img width="20" src="./src/web/icon/home.svg" alt="" />
+                </div>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>線上預約</a>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <p>/</p>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>一般平常日</a>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <p>/</p>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>小型車種</a>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <p>/</p>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>CUXI 紫 115</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="section-page-content">
+          <article class="section-page-article-main">
+            <!-- 產品內文區塊 -->
+            <div class="product-inner-main">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <!-- Swiper -->
+                  <div
+                    style="
+                      --swiper-navigation-color: #fff;
+                      --swiper-pagination-color: #fff;
+                    "
+                    class="swiper mySwiper2"
+                  >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <img
+                        class="w-100"
+                        src="./src/web/icon/arrow_4.svg"
+                        alt="prev"
+                      />
+                    </div>
+                    <div class="swiper-button-next">
+                      <img
+                        class="w-100"
+                        src="./src/web/icon/arrow_5.svg"
+                        alt="next"
+                      />
+                    </div>
+                  </div>
+                  <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 加入尋價車 -->
+                <div class="col-12 col-md-6 d-flex flex-column">
+                  <div class="pro-inner-txt">
+                    <h3>CUXI 紫 115</h3>
+                    <div class="pro-inner-price d-flex">
+                      <span><del>定價：400 / 日</del></span>
+                      <p>優惠價：350 / 日</p>
+                    </div>
+                    <div class="pro-inner-content">
+                      <p>
+                        文案待補文案待補文案待補文案待補文案待補文案待補文案待補
+                        文案待補文案待補文案待補文案待補文案待補文案待補文案待補
+                        文案待補文案待補文案待補文案待補
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pro-inner-btn">
+                    <button
+                      onclick="window.location.href = '#'"
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      立即預約租車
+                      <div class="pro-inner-btn-pic">
+                        <img src="./src/web/icon/button_finger.svg" alt="" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <!-- 資訊欄位 -->
+                <div class="col-12 col-md-12 mb-5 overflow-hidden">
+                  <ul
+                    class="nav product-nav-tabs nav-tabs mt-md-5 g-0 d-flex"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item nav-item-title" role="presentation">
+                      <button
+                        class="nav-link rounded-0 nav-link-product active"
+                        id="home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#home-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="home-tab-pane"
+                        aria-selected="true"
+                      >
+                        產品說明
+                      </button>
+                    </li>
+                    <li
+                      class="nav-item nav-item-title border-1"
+                      role="presentation"
+                    >
+                      <button
+                        class="nav-link rounded-0 nav-link-product w-100"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#profile-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile-tab-pane"
+                        aria-selected="false"
+                      >
+                        產品規格
+                      </button>
+                    </li>
+                    <li
+                      class="nav-item nav-item-title border-1"
+                      role="presentation"
+                    >
+                      <button
+                        class="nav-link rounded-0 nav-link-product w-100"
+                        id="third-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#third-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="third-tab-pane"
+                        aria-selected="false"
+                      >
+                        注意事項
+                      </button>
+                    </li>
+                  </ul>
+                  <div
+                    class="tab-content product-tab-content"
+                    id="myTabContent"
+                  >
+                    <div
+                      class="tab-pane fade show active pt-5"
+                      id="home-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                      tabindex="0"
+                    >
+                      <p>
+                        文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案
+                      </p>
+                    </div>
+                    <div
+                      class="tab-pane fade pt-5"
+                      id="profile-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                      tabindex="0"
+                    >
+                      <p>
+                        文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述文案敘述
+                      </p>
+                    </div>
+                    <div
+                      class="tab-pane fade pt-5"
+                      id="third-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="third-tab"
+                      tabindex="0"
+                    >
+                      <h3>租車及預約須知：</h3>
+                      <p>
+                        1.
+                        租車時須簽訂租賃合約,請攜帶駕照或身分證,承租人所出示之證件必須為本人所有。
+                      </p>
+                      <p>2. 本公司車輛均投保強制險。</p>
+                      <p>
+                        3.
+                        平日、國定連假可提前用Line「@136cdckm（需加@）」預約。
+                      </p>
+                      <p>
+                        4.
+                        平日租車以24小時計算,如需延長時間請提前告知,超過6小時以上以一天計算,提前還車恕不退費,逾時費依車款車價酌收50-100元。
+                        國定連續假期以當天計費。 （依店鋪公告為主）
+                      </p>
+                      <p>
+                        5.
+                        租車費用不包括汽油,承租人請自行至加油站依車款使用的汽油添加。
+                      </p>
+                      <p>
+                        6.
+                        租賃期間若有「停車繳費單」,承租人需自行至超市繳費,或請本店代繳以免受罰,如有違規等相關事宜,承租人需將罰單繳清。
+                      </p>
+                      <p>7. 不得供他人駕駛、從事營業行為、酒後駕車等用途。</p>
+                      <p>
+                        8.
+                        車輛無法跨越縣市騎乘,僅限於舊台南市區。（例：東區、安平區、中西區、南區、北區。）
+                      </p>
+                      <p>
+                        9.
+                        若取消訂車,請提前告知,三天前全額退款只扣匯款手續費,臨時取消扣30%加30元手續費,也可保留下次安排再過來。
+                      </p>
+                      <p>
+                        10.
+                        付訂金後,車款變更或取車日期變更,請於原定日前三天提出,以便本店車輛調度,變更需依店家當日車款為主,逾期恕無法受理變更。
+                      </p>
+                      <p>
+                        11.
+                        因車輛為資產部分,如遇不可預測的情況,本公司保有為客戶調度同等級車輛之權利。
+                      </p>
+                      <h3 class="mt-3">租車及預約須知：</h3>
+                      <p>
+                        1.檢查機車狀況：
+                        確保車輛有無損壞或異常情況,取車時請先檢查。
+                        例：車體、引擎、剎車、外觀、胎壓等皆無任何狀況才交車,將外觀拍照或錄像並免還車時有任何爭議。
+                      </p>
+                      <p>
+                        2.
+                        確認保險與文件：了解租借機車的保險範圍和要求,並簽署相關文件。
+                      </p>
+                      <p>
+                        3.
+                        熟悉操作：試駕一下機車，確保熟悉操作方式,包括啟動、煞車、轉彎等。
+                      </p>
+                      <p>
+                        4.
+                        遵守交通規則：遵守當地交通法規,包括速度限制、行車方向、停車規定等。
+                      </p>
+                      <p>
+                        5.
+                        安全配備：戴好安全頭盔,並確保其他安全配備完好,如手套、護具等。
+                      </p>
+                      <p>
+                        6.
+                        妥善停放：停車時選擇安全的地點,並確保機車被鎖好以防盜竊。
+                      </p>
+                      <p>
+                        7.
+                        租賃期間若車輛故障、爆胎、亮機油燈,請先聯絡本店,切勿自行找車行維修。
+                      </p>
+                      <p>
+                        8.
+                        租賃期間若有發生事故,請保持現場原樣,立即報警處理,並通知本公司協助。
+                      </p>
+                      <div class="tab-pane-pic">
+                        <img
+                          class="w-100"
+                          src="./src/web/on_line/weekdays_page/product_page/pic_1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="booking-back-btn d-flex align-items-center mx-auto">
+                <div class="back-btn-pic">
+                  <img width="50px" src="./src/web/icon/back.svg" alt="" />
+                </div>
+                <a href="#">BACK</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- 內文主區塊end -->
+        <!-- 桌機版copyright -->
+        <div class="section-copyright d-md-block d-none">
+          <p>
+            <span>Copyright 2024</span> &copy;國光機車出租 | 版權所有 Designed
+            by <a href="https://www.renu.com.tw/">Renu</a>
+          </p>
+        </div>
+        <!-- 手機板footer -->
+        <section class="phone-footer d-block d-md-none">
+          <div class="phone-footer-main">
+            <a href="#" class="d-block phone-footer-logo">
+              <img class="w100" src="./src/web/icon/logo.svg" alt="" />
+            </a>
+            <div class="phone-footer-qcode">
+              <img src="./src/phone/icon/qr.png" alt="" />
+            </div>
+            <div class="footer-profile d-flex flex-column">
+              <ul>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/tel.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">06-2227000</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">
+                    星期一至日<br />
+                    早上 9:00 ~ 晚上 10:00
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="section-copyright d-md-none d-block">
+              <p>
+                Copyright 2024 &copy;國光機車出租
+                <br />
+                版權所有 | Designed by
+                <a href="https://www.renu.com.tw/"> Renu</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="drop-menu d-flex flex-column align-items-center">
+      <div class="phone-menu-close-btn" id="closeMenu">
+        <img src="./src/phone/icon/close.svg" alt="close btn" />
+      </div>
+      <div class="phone-menu-logo">
+        <img src="./src/phone/icon/logo.svg" alt="" />
+      </div>
+      <nav class="section-phone-meun">
+        <ul>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_about.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 關於國光 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_online.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 線上預約 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_place.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 台南景點介紹 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 顧客好評 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_qa.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> Q&A </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_contact.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 聯絡我們 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 網站地圖 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- <script src="./js/scroll-top.js"></script> -->
+    <!-- swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        freeMode: true,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+        breakpoints: {
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+        breakpoints: {
+          768: {
+            spaceBetween: 4,
+          },
+        },
+      });
+    </script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+      //手機menu
+      const openBtn = document.getElementById("openMenu");
+      const closeBtn = document.getElementById("closeMenu");
+      const dropMenu = document.querySelector(".drop-menu");
+
+      openBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(0%)";
+      });
+
+      closeBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(-101%)";
+      });
+    </script>
+  </body>
+</html>

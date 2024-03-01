@@ -92,8 +92,6 @@
     &:hover .booking-item-pic .dark-book-two {
       background-color: #1a13115e;
     }
-    &:hover {
-    }
     p {
       font-size: 30px;
       font-weight: 700;
@@ -161,6 +159,88 @@
     }
   }
 }
+.booking-bike-item {
+  max-width: 350px;
+  margin: auto;
+  margin-bottom: 67px;
+  &:hover .booking-bike-pic .product-dark-box {
+    background-color: #644a389f;
+  }
+  &:hover .booking-bike-pic .product-dark-box .product-dark-pic {
+    opacity: 1;
+  }
+  h5 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 1em 0;
+    text-align: center;
+    color: #1a1311;
+  }
+  .booking-bike-txt {
+    span {
+      font-size: 20px;
+      font-weight: 800;
+      color: #b2b2b2;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ef1d1d;
+    }
+  }
+  .booking-bike-pic {
+    width: 100%;
+    border-radius: 33px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+    .product-dark-box {
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      background-color: #644a3800;
+      cursor: pointer;
+      transition: 0.2s;
+      .product-dark-pic {
+        display: block;
+        width: 27px;
+        height: 27px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.3s;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.booking-bike-list {
+  padding-top: 60px;
+  margin-bottom: 190px;
+}
+.page-navigation {
+  display: block;
+  padding-top: 200px;
+}
+.pagination-list {
+  width: fit-content;
+
+  > li {
+    padding: 0 15px 5px;
+    > a {
+      text-decoration: none;
+      color: #1a1311;
+      font-size: 22px;
+      font-weight: 800;
+    }
+  }
+}
 @media (max-width: 991px) {
   .booking-list {
     padding-top: 0px;
@@ -186,6 +266,24 @@
     }
     .back-btn-pic {
       width: 40px;
+    }
+  }
+  .page-navigation {
+    display: block;
+    padding-top: 150px;
+  }
+  .booking-bike-item {
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 40px;
+    .booking-bike-pic {
+      width: 100%;
+      border-radius: 33px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
     }
   }
 }

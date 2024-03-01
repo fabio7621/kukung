@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="國光租車" />
+    <meta name="description" content="國光租車" />
+    <title>國光租車</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./stylesheet/all.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1 class="sr-only"></h1>
+      <!-- 手機板 navbar -->
+      <section class="section-phone-navbar d-md-none d-flex align-items-center">
+        <div class="phone-navbar-pic">
+          <img src="./src/phone/icon/logo.svg" alt="" />
+        </div>
+        <form class="search-bar">
+          <div
+            class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="form-pic">
+              <img src="./src/web/icon/search.svg" alt="search" />
+            </div>
+          </div>
+          <input placeholder="搜尋車種...." type="text" />
+        </form>
+        <div class="menu-btn-pic" id="openMenu">
+          <img src="./src/phone/icon/menu.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- 桌機板 選單 -->
+      <section class="main-header d-md-block d-none">
+        <div class="logobox w-100">
+          <a class="logo-pic d-block">
+            <img class="w-100" src="./src/web/icon/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <nav class="section-navbar">
+          <ul>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_about.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 關於國光 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_online.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 線上預約 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_place.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 台南景點介紹 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 顧客好評 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_qa.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> Q&A </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_contact.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 聯絡我們 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 網站地圖 </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="section-qCode">
+          <div class="qcode-pic">
+            <img src="./src/web/icon/qr.png" alt="qr" />
+          </div>
+        </div>
+        <div class="section-search">
+          <form class="search-bar">
+            <div
+              class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="form-pic">
+                <img src="./src/web/icon/search.svg" alt="search" />
+              </div>
+            </div>
+            <input placeholder="搜尋車種...." type="text" />
+          </form>
+        </div>
+        <div class="footer-profile d-flex flex-column">
+          <ul>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/tel.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">06-2227000</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">
+                星期一至日<br />
+                早上 9:00 ~ 晚上 10:00
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <main class="index-main">
+        <!-- 內文主區塊 -->
+        <section class="page-main-banner">
+          <img
+            class="w-100 d-none d-md-block"
+            src="./src/web/on_line/on_line_banner.png"
+            alt=""
+          />
+          <img
+            class="w-100 d-block d-md-none"
+            src="./src/phone/on_line/on_line_banner.png"
+            alt=""
+          />
+        </section>
+        <section class="section-bread">
+          <div class="section-bread-main">
+            <ol class="bread-list d-flex align-items-center">
+              <li class="bread-list-item">
+                <div class="section-bread-pic">
+                  <img width="20" src="./src/web/icon/home.svg" alt="" />
+                </div>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>線上預約</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="section-page-content">
+          <article class="section-page-article-main">
+            <!-- 內文區塊 -->
+            <div class="section-checkout-tltle">
+              <div class="checkout-tltle-pic">
+                <img
+                  src="./src/web/on_line/weekdays_page/product_page/checkout_page/warn.svg"
+                />
+              </div>
+            </div>
+            <div class="section-checkout-content">
+              <h3>1.超時部分收費標準</h3>
+              <p class="priceCard">
+                <i class="bi bi-caret-right-fill"></i
+                ><b>平常日</b>租車超時：<span>一小時70元至150元</span>
+              </p>
+              <!-- <span>依車型租金</span> -->
+              <p class="priceCard">
+                <i class="bi bi-caret-right-fill"></i
+                ><span>例假日</span>租車超時：<span>一小時100元至180元</span>
+              </p>
+              <!-- <span>依車型租金</span> -->
+              <h5>【 租車超時部分,一天最高以6小時為一天計算 】</h5>
+              <h3>2.租車行李收送服務</h3>
+              <p>
+                <i class="bi bi-caret-right-fill"></i>
+                租車費用<span>需滿500元以上</span>, 可享有本店<span
+                  >免費收送服務</span
+                >
+              </p>
+              <p>
+                <i class="bi bi-caret-right-fill"></i>費用
+                <span>未滿500元</span>,如需本店收送行李,需加收100元服務費用
+              </p>
+              <p>
+                <i class="bi bi-caret-right-fill"></i>
+                送行李時間為：15:00～17:00
+              </p>
+              <h3>3.租車損壞遺失配件收費標準</h3>
+              <p>
+                <i class="bi bi-caret-right-fill"></i
+                >機車鑰匙：300元一把(含暗鎖及鑰匙圈)
+              </p>
+              <p>
+                <i class="bi bi-caret-right-fill"></i>
+                如個人櫃鎖：100元一把
+              </p>
+              <p>
+                <i class="bi bi-caret-right-fill"></i>
+                手機架：300元
+              </p>
+              <p><span>【車體損壞部分, 需請師傅現場估價, 現場賠賞 】</span></p>
+            </div>
+            <div class="section-checkout-step">
+              <div class="section-checkout-step-main d-flex align-items-center">
+                <div class="checkout-step-item">
+                  <div class="checkout-step-pic">
+                    <img
+                      src="./src/web/on_line/weekdays_page/product_page/checkout_page/order.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p>訂購資料</p>
+                </div>
+                <div class="checkout-step-arrow">
+                  <img src="./src/web/icon/arrow_2.svg" alt="" />
+                </div>
+                <div class="checkout-step-item">
+                  <div class="checkout-step-pic">
+                    <img
+                      src="./src/web/on_line/weekdays_page/product_page/checkout_page/money.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p>選擇付款方式</p>
+                </div>
+                <div class="checkout-step-arrow">
+                  <img src="./src/web/icon/arrow_2.svg" alt="" />
+                </div>
+                <div class="checkout-step-item">
+                  <div class="checkout-step-pic">
+                    <img
+                      src="./src/web/on_line/weekdays_page/product_page/checkout_page/shopping_cart.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p>訂購完成</p>
+                </div>
+              </div>
+            </div>
+            <!-- h3橘色外框標題,p標籤裡面用span框住會變紅字粗體,有添加 class="priceCard"的p標籤會有"依車型租金"小卡,h5藍字黑體 -->
+            <!-- 手機板購物車 -->
+            <div class="checkout-carts-phone">
+              <div class="carts-phone-title">
+                <h4>商品名稱</h4>
+              </div>
+              <div class="checkout-carts-phone-item">
+                <div
+                  class="carts-phone-item-top d-flex align-items-center justify-content-between"
+                >
+                  <a href="#" class="d-block checkout-carts-phone-pic">
+                    <img
+                      width="90px"
+                      src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                      alt=""
+                    />
+                  </a>
+                  <p>CUXI 紫 115</p>
+                  <div class="checkout-carts-phone-del">
+                    <img src="./src/web/icon/delete.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="carts-phone-item-bot d-flex align-items-center justify-content-between"
+                >
+                  <input type="number" />
+                  <p>$350</p>
+                </div>
+              </div>
+              <div class="checkout-carts-phone-item">
+                <div
+                  class="carts-phone-item-top d-flex align-items-center justify-content-between"
+                >
+                  <a href="#" class="d-block checkout-carts-phone-pic">
+                    <img
+                      width="90px"
+                      src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                      alt=""
+                    />
+                  </a>
+                  <p>CUXI 紫 115</p>
+                  <div class="checkout-carts-phone-del">
+                    <img src="./src/web/icon/delete.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="carts-phone-item-bot d-flex align-items-center justify-content-between"
+                >
+                  <input type="number" />
+                  <p>$350</p>
+                </div>
+              </div>
+            </div>
+            <!-- 桌機板購物車 -->
+            <table class="section-checkout-carts w-100">
+              <thead>
+                <tr>
+                  <th style="width: 38%">商品名稱</th>
+                  <th style="width: 10%">價格</th>
+                  <th class="text-end pe-4" style="width: 22%">數量</th>
+                  <th style="width: 10%">刪除</th>
+                  <th class="text-end pe-4" style="width: 20%">小計</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <a href="#" class="d-block cart-pic">
+                      <img
+                        width="116px"
+                        src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                        alt=""
+                      />
+                    </a>
+                    <p>CUXI 紫 115</p>
+                  </td>
+                  <td class="text-center align-middle"><span>$350</span></td>
+                  <td class="align-middle p-0">
+                    <input class="w-25" type="number" />
+                  </td>
+                  <td class="align-middle">
+                    <div class="cart-del">
+                      <img src="./src/web/icon/delete.svg" alt="" />
+                    </div>
+                  </td>
+                  <td class="align-middle text-end"><span>$350</span></td>
+                </tr>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <a href="#" class="d-block cart-pic">
+                      <img
+                        width="116px"
+                        src="./src/web/on_line/weekdays_page/product_page/pic_b.png"
+                        alt=""
+                      />
+                    </a>
+                    <p>CUXI 紫 115</p>
+                  </td>
+                  <td class="text-center align-middle"><span>$350</span></td>
+                  <td class="align-middle p-0">
+                    <input class="w-25" type="number" />
+                  </td>
+                  <td class="align-middle">
+                    <div class="cart-del">
+                      <img src="./src/web/icon/delete.svg" alt="" />
+                    </div>
+                  </td>
+                  <td class="align-middle text-end"><span>$350</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="checkout-total d-flex flex-row-reverse">
+              <div class="checkout-total-price d-flex">
+                <p>總金額</p>
+                <span>$950</span>
+              </div>
+            </div>
+            <div
+              class="checkout-total-btns d-flex justify-content-end align-items-center"
+            >
+              <button>繼續選購</button>
+              <button>重新計算金額</button>
+            </div>
+            <div class="section-checkout-order">
+              <div class="checkout-order-main">
+                <div class="checkout-order-title">
+                  <div class="checkout-order-title-pic">
+                    <img
+                      src="./src/web/on_line/weekdays_page/product_page/checkout_page/orderdata.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <form class="checkout-order-box" action="">
+                  <div class="section-order-item">
+                    <label class="mb-md-3 mb-3" for="myname"
+                      ><span>＊</span>姓名
+                    </label>
+                    <input
+                      type="text"
+                      class="w-100 mb-md-5 mb-3 form-control"
+                      id="myname"
+                      placeholder="姓名"
+                    />
+                  </div>
+                  <div class="section-order-item">
+                    <label class="mb-md-3 mb-3" for="">
+                      <span>＊</span>電話
+                    </label>
+                    <input
+                      placeholder="電話"
+                      class="w-100 mb-md-5 mb-3 form-control"
+                      type="tel"
+                    />
+                  </div>
+                  <div class="section-order-item">
+                    <label class="mb-md-3 mb-3" for="">
+                      <span>＊</span>電子信箱
+                    </label>
+                    <input
+                      placeholder="電子信箱"
+                      class="w-100 mb-md-5 mb-3 form-control"
+                      type="email"
+                    />
+                  </div>
+                  <div class="section-order-item">
+                    <label class="mb-md-3 mb-3" for="">
+                      <span>＊</span>租車日期</label
+                    >
+                    <input
+                      placeholder="租車日期"
+                      class="w-100 mb-md-5 mb-3 form-control"
+                      type="date"
+                    />
+                  </div>
+                  <div class="section-order-item">
+                    <label class="mb-md-3 mb-3" for=""
+                      ><span>＊</span>數量總計</label
+                    >
+                    <input
+                      placeholder="數量總計"
+                      class="w-100 mb-md-5 mb-3 form-control"
+                      type="number"
+                      min="0"
+                    />
+                  </div>
+                  <div class="section-order-item">
+                    <label class="mb-md-3 mb-3" for=""
+                      ><span>＊</span>大約取車時間AM/PM</label
+                    >
+                    <input
+                      placeholder="大約取車時間AM/PM"
+                      class="w-100 mb-md-5 mb-3 form-control"
+                      type="time"
+                      min="0"
+                    />
+                  </div>
+
+                  <div class="section-order-item">
+                    <label class="mb-md-3 mb-3" for=""
+                      ><span>＊</span>備註（會超時需留 ex:超時1小時）</label
+                    >
+                    <textarea
+                      class="w-100 form-control"
+                      name=""
+                      id=""
+                      rows="10"
+                    ></textarea>
+                  </div>
+                  <div
+                    class="order-checkbox form-check d-flex align-items-center"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      您同意<a href="./src/web/on_line/租車契約.pdf"
+                        >機車租賃契約書</a
+                      >
+                    </label>
+                  </div>
+                </form>
+                <div class="checkout-order-title">
+                  <div class="checkout-order-title-pic">
+                    <img
+                      src="./src/web/on_line/weekdays_page/product_page/checkout_page/checkout.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <form class="checkout-pay-order radio-container">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      ATM轉帳或銀行匯款
+                    </label>
+                    <p class="d-md-block d-none">
+                      第一銀行台南分行 代碼：001 帳號：123-45-78900
+                    </p>
+                    <p class="d-md-none d-block">
+                      第一銀行台南分行<br />代碼：001<br />帳號：123-45-78900
+                    </p>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      信用卡刷卡
+                    </label>
+                    <p>信用卡一次付清</p>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault3"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      網路ATM
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault4"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault4">
+                      超商條碼
+                    </label>
+                    <p>自行列印條碼至超商付款</p>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault5"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault5">
+                      超商條碼
+                    </label>
+                    <p>至超商機器 , 列印付款代碼付款</p>
+                  </div>
+                </form>
+                <button class="checkout-pay-order-btn w-100">確認結帳</button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- 內文主區塊end -->
+        <!-- 桌機版copyright -->
+        <div class="section-copyright d-md-block d-none">
+          <p>
+            <span>Copyright 2024</span> &copy;國光機車出租 | 版權所有 Designed
+            by <a href="https://www.renu.com.tw/">Renu</a>
+          </p>
+        </div>
+        <!-- 手機板footer -->
+        <section class="phone-footer d-block d-md-none">
+          <div class="phone-footer-main">
+            <a href="#" class="d-block phone-footer-logo">
+              <img class="w100" src="./src/web/icon/logo.svg" alt="" />
+            </a>
+            <div class="phone-footer-qcode">
+              <img src="./src/phone/icon/qr.png" alt="" />
+            </div>
+            <div class="footer-profile d-flex flex-column">
+              <ul>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/tel.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">06-2227000</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">
+                    星期一至日<br />
+                    早上 9:00 ~ 晚上 10:00
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="section-copyright d-md-none d-block">
+              <p>
+                Copyright 2024 &copy;國光機車出租
+                <br />
+                版權所有 | Designed by
+                <a href="https://www.renu.com.tw/"> Renu</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="drop-menu d-flex flex-column align-items-center">
+      <div class="phone-menu-close-btn" id="closeMenu">
+        <img src="./src/phone/icon/close.svg" alt="close btn" />
+      </div>
+      <div class="phone-menu-logo">
+        <img src="./src/phone/icon/logo.svg" alt="" />
+      </div>
+      <nav class="section-phone-meun">
+        <ul>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_about.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 關於國光 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_online.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 線上預約 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_place.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 台南景點介紹 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 顧客好評 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_qa.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> Q&A </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_contact.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 聯絡我們 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 網站地圖 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <!-- bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- <script src="./js/scroll-top.js"></script> -->
+    <!-- swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+      //手機menu
+      const openBtn = document.getElementById("openMenu");
+      const closeBtn = document.getElementById("closeMenu");
+      const dropMenu = document.querySelector(".drop-menu");
+
+      openBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(0%)";
+      });
+
+      closeBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(-101%)";
+      });
+    </script>
+  </body>
+</html>
