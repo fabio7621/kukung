@@ -194,7 +194,7 @@
             <div class="section-product-nav d-none d-md-block">
               <ul class="d-md-flex d-none flex mx-auto">
                 <li>
-                  <a href="#">小型車種</a>
+                  <a class="tainan-active" href="#">小型車種</a>
                 </li>
                 <li>
                   <a href="#">中型車種</a>
@@ -478,87 +478,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="booking-bike-item">
-                  <a
-                    href="#"
-                    class="booking-bike-pic position-relative d-block"
-                  >
-                    <img
-                      src="./src/web/on_line/weekdays_page/product_7.png"
-                      alt=""
-                    />
-                    <div class="product-dark-box position-absolute">
-                      <div class="product-dark-pic position-absolute">
-                        <img
-                          class="w-100"
-                          src="./src/web/icon/on_line_magnifier.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </a>
-                  <h5>GP125 黑紅</h5>
-                  <div class="booking-bike-txt d-flex justify-content-between">
-                    <span><del>定價：400</del></span>
-                    <p>優惠價：350</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="booking-bike-item">
-                  <a
-                    href="#"
-                    class="booking-bike-pic position-relative d-block"
-                  >
-                    <img
-                      src="./src/web/on_line/weekdays_page/product_8.png"
-                      alt=""
-                    />
-                    <div class="product-dark-box position-absolute">
-                      <div class="product-dark-pic position-absolute">
-                        <img
-                          class="w-100"
-                          src="./src/web/icon/on_line_magnifier.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </a>
-                  <h5>勁戰五代 125</h5>
-                  <div class="booking-bike-txt d-flex justify-content-between">
-                    <span><del>定價：400</del></span>
-                    <p>優惠價：350</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="booking-bike-item">
-                  <a
-                    href="#"
-                    class="booking-bike-pic position-relative d-block"
-                  >
-                    <img
-                      src="./src/web/on_line/weekdays_page/product_9.png"
-                      alt=""
-                    />
-                    <div class="product-dark-box position-absolute">
-                      <div class="product-dark-pic position-absolute">
-                        <img
-                          class="w-100"
-                          src="./src/web/icon/on_line_magnifier.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </a>
-                  <h5>勁戰六代 125</h5>
-                  <div class="booking-bike-txt d-flex justify-content-between">
-                    <span><del>定價：400</del></span>
-                    <p>優惠價：350</p>
-                  </div>
-                </div>
-              </div>
+
               <!-- 分頁 -->
               <nav class="page-navigation">
                 <ul class="pagination-list d-flex flex-wrap mx-auto">
@@ -779,20 +699,7 @@
         },
       });
     </script>
-
-    <script>
-      //手機menu
-      const openBtn = document.getElementById("openMenu");
-      const closeBtn = document.getElementById("closeMenu");
-      const dropMenu = document.querySelector(".drop-menu");
-
-      openBtn.addEventListener("click", function () {
-        dropMenu.style.transform = "translateY(0%)";
-      });
-
-      closeBtn.addEventListener("click", function () {
-        dropMenu.style.transform = "translateY(-101%)";
-      });
-    </script>
+    <!-- 手機menu -->
+    <script src="./js/openmenu.js"></script>
   </body>
 </html>

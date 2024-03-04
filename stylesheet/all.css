@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "../stylesheet/bootstrap.css";
+@import "../stylesheet/fancybox.css";
 @import "../stylesheet/swiper-bundle.min.css";
 @import "../stylesheet/owl.carousel.min.css";
 @import "../stylesheet/owl.theme.default.css";
@@ -998,6 +999,9 @@ body {
   letter-spacing: 1.2px;
   text-decoration: none;
   padding: 23px 35px;
+}
+.section-product-nav > ul li a:hover {
+  color: #f8b11b;
 }
 .section-product-nav > ul li .tainan-active {
   color: #f8b11b;
