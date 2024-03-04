@@ -22,6 +22,9 @@
         text-decoration: none;
         padding: 23px 35px;
       }
+      .tainan-active {
+        color: #f8b11b;
+      }
     }
   }
 }
@@ -84,8 +87,8 @@
   padding-top: 60px;
   padding-bottom: 580px;
   .booking-item {
-    padding-left: 45px;
-    padding-right: 45px;
+    // padding-left: 45px;
+    // padding-right: 45px;
     &:hover .booking-item-pic img {
       transform: scale(1.2);
     }
@@ -102,6 +105,7 @@
       border-radius: 33px;
       overflow: hidden;
       position: relative;
+
       img {
         width: 100%;
         transform: scale(1);
@@ -129,6 +133,9 @@
           }
         }
       }
+    }
+    .booking-pic-border {
+      outline: 2px solid #b9b8b6;
     }
   }
 }
@@ -245,6 +252,7 @@
   font-size: 20px;
   font-weight: 600;
 }
+
 @media (max-width: 991px) {
   .booking-list {
     padding-top: 0px;
@@ -263,6 +271,9 @@
         }
       }
     }
+  }
+  .section-checkout-carts {
+    display: none;
   }
   .booking-back-btn {
     a {

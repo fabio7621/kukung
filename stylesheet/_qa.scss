@@ -1,0 +1,87 @@
+.section-qa-main {
+  padding-bottom: 410px;
+  .accordion-item {
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 0;
+    button {
+      font-size: 35px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #1a1311;
+      padding: 12px 1em;
+      background-color: #eee7e1;
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+  .accordion-button::after {
+    background-image: url(../src/web/icon/plus-solid.svg);
+  }
+  .accordion-button:not(.collapsed)::after {
+    transform: none;
+    background-image: url(../src/web/icon/minus-solid.svg);
+  }
+  .accordion-body {
+    display: flex;
+    padding: 0;
+    padding-top: 1em;
+    .accordion-a {
+      h3 {
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        color: #1a1311;
+        padding-left: 1em;
+      }
+    }
+    .accordion-txt {
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: 0.1em;
+        color: #1a1311;
+        transform: translateY(0.2em);
+        span {
+          color: #d91b1b;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .section-qa-main {
+    padding-bottom: 180px;
+    .accordion-item {
+      margin-bottom: 25px;
+      background-color: transparent;
+      border: 0;
+      button {
+        font-size: 18px;
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+    .accordion-body {
+      flex-direction: column;
+      padding-left: 18px;
+      .accordion-a {
+        h3 {
+          font-size: 25px;
+          padding-left: 0;
+          margin-bottom: 0.3em;
+        }
+      }
+      .accordion-txt {
+        p {
+          font-size: 18px;
+          transform: translateY(-0.1em);
+        }
+      }
+    }
+  }
+}

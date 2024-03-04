@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,safari=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="國光租車" />
+    <meta name="description" content="國光租車" />
+    <title>國光租車</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@501&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./stylesheet/all.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1 class="sr-only"></h1>
+      <!-- 手機板 navbar -->
+      <section class="section-phone-navbar d-md-none d-flex align-items-center">
+        <div class="phone-navbar-pic">
+          <img src="./src/phone/icon/logo.svg" alt="" />
+        </div>
+        <form class="search-bar">
+          <div
+            class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="form-pic">
+              <img src="./src/web/icon/search.svg" alt="search" />
+            </div>
+          </div>
+          <input placeholder="搜尋車種...." type="text" />
+        </form>
+        <div class="menu-btn-pic" id="openMenu">
+          <img src="./src/phone/icon/menu.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- 桌機板 選單 -->
+      <section class="main-header d-md-block d-none">
+        <div class="logobox w-100">
+          <a class="logo-pic d-block">
+            <img class="w-100" src="./src/web/icon/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <nav class="section-navbar">
+          <ul>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_about.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 關於國光 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_online.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 線上預約 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_place.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 台南景點介紹 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 顧客好評 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_qa.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> Q&A </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_contact.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 聯絡我們 </a>
+            </li>
+            <li>
+              <div class="nav-pic">
+                <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)"> 網站地圖 </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="section-qCode">
+          <div class="qcode-pic">
+            <img src="./src/web/icon/qr.png" alt="qr" />
+          </div>
+        </div>
+        <div class="section-search">
+          <form class="search-bar">
+            <div
+              class="d-flex form-pic-box d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="form-pic">
+                <img src="./src/web/icon/search.svg" alt="search" />
+              </div>
+            </div>
+            <input placeholder="搜尋車種...." type="text" />
+          </form>
+        </div>
+        <div class="footer-profile d-flex flex-column">
+          <ul>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/tel.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">06-2227000</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+            </li>
+            <li>
+              <div class="profile-pic">
+                <img src="./src/web/icon/add.svg" alt="" />
+              </div>
+              <a href="javascript:void(0)">
+                星期一至日<br />
+                早上 9:00 ~ 晚上 10:00
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <main class="index-main">
+        <!-- 內文主區塊 -->
+        <section class="page-main-banner">
+          <img
+            class="w-100 d-none d-md-block"
+            src="./src/web/on_line/on_line_banner.png"
+            alt=""
+          />
+          <img
+            class="w-100 d-block d-md-none"
+            src="./src/phone/on_line/on_line_banner.png"
+            alt=""
+          />
+        </section>
+        <section class="section-bread">
+          <div class="section-bread-main">
+            <ol class="bread-list d-flex align-items-center">
+              <li class="bread-list-item">
+                <div class="section-bread-pic">
+                  <img width="20" src="./src/web/icon/home.svg" alt="" />
+                </div>
+              </li>
+              <li class="bread-list-item" aria-current="page">
+                <a>Q&A</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="section-page-content">
+          <article class="section-page-article-main">
+            <!-- 內文區塊 -->
+            <div class="page-article-box">
+              <div
+                class="section-page-article-title d-flex align-items-center border-0"
+              >
+                <div class="article-title-icon">
+                  <img
+                    width="28px"
+                    src="./src/web/icon/motorcycle.svg"
+                    alt=""
+                  />
+                </div>
+                <h3>Q&A</h3>
+              </div>
+            </div>
+            <div class="section-qa-main">
+              <div class="accordion rounded-0" id="accordionQa">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      Q：<span> 請問有無提供伴手禮冷藏服務呢? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>有的！有提供伴手禮冷藏服務。</p>
+                        <p>
+                          方便性：您可以將購買的伴手禮交給本店,我們會提供冷藏服務,讓您們可以放心地繼續旅行,無需擔心伴手禮會變質。
+                        </p>
+                        <p>
+                          保鮮效果：冷藏服務可以確保伴手禮的新鮮度和品質,在您送禮給親朋好友時,可以給予他們最好的禮物。
+                        </p>
+                        <p>
+                          專業管理：確保您們的伴手禮會妥善管理和保管,並在您指定的時間提供取件服務。
+                        </p>
+                        <p>
+                          適用範圍：各種類型的伴手禮，無論是食品、飲料還是其他需要冷藏的產品。
+                        </p>
+                        <p>
+                          無隱藏費用：這是一項完全免費的服務，您無需支付任何額外費用。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Q：<span>
+                        請問是否有提供行李寄放及運送至旅店的服務呢?
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>有的！有提供行李寄放及運送至旅店的服務唷！</p>
+                        <p>
+                          <b>行李寄放：</b
+                          >本店提供的寄放處安全地存放行李,讓您們在旅行中無需擔心行李的安全問題,輕鬆自在地遊覽景點。
+                        </p>
+                        <p>
+                          <b>免費運送：</b
+                          >本店亦提供免費的行李運送服務,您只需將行李交給我們,服務專員就會負責將行李運送至民宿或旅店,
+                        </p>
+                        <p>讓您們在未抵達飯店時能夠輕鬆地享受旅程。</p>
+                        <p>
+                          <b>服務時間：</b
+                          >我們的運送服務提供時間為「下午15:00～下午17:30」
+                        </p>
+                        <p>
+                          在這段時間內,我們會隨時提供幫助,確保您能夠方便地使用這項服務。
+                        </p>
+                        <p>
+                          <b>安全保障：</b
+                          >確保客戶的行李在寄放和運送過程中得到妥善保管和照顧,避免任何損壞或遺失的情況發生。
+                        </p>
+                        <p>
+                          <b>便利性：</b
+                          >我們提供的行李寄放和免費運送至旅店服務,讓您無需費心搬運沉重的行李。
+                        </p>
+                        <p>
+                          這不僅節省了您的時間和精力,也讓您更輕鬆地享受您的旅程。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Q：
+                      <span>請問有附贈雨衣嗎?</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>
+                          有的！我們有提供雨衣,無論天氣是否下雨,讓您在旅行中始終保持乾爽舒適。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Q：
+                      <span> 租賃時是否需要押證件及簽本票? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>
+                          租賃時,我們不需要您押證件,也不需要簽署本票,讓您更輕鬆地享受租車體驗。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefive"
+                      aria-expanded="false"
+                      aria-controls="collapsefive"
+                    >
+                      Q：
+                      <span> 請問有提供可上鎖的個人置物櫃嗎? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>
+                          我們有提供可上鎖的個人置物櫃,讓您放心存放貴重物品,安心享受旅程。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      Q：
+                      <span> 請問有提供免費安全帽及其附加服務呢? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>
+                          我們有提供免費四分之三和半罩式安全帽,附帶酒精及消臭噴霧,同時還提供鏡片和內襯,確保您在使用前能夠得到清潔和舒適的使用體驗。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="collapseSeven"
+                    >
+                      Q：<span> 請問貴店有無提供罐裝開水? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSeven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>
+                          我們提供罐裝冰開水給客人隨身攜帶,確保您們在騎行期間隨時享受到清涼的解渴感。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight"
+                      aria-expanded="false"
+                      aria-controls="collapseEight"
+                    >
+                      Q：
+                      <span> 請問貴店車輛是否有提供手機支架呢? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseEight"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>有的！本店有提供手機支架！</p>
+                        <p>
+                          <b>方便導航：</b
+                          >您可以將手機安裝在支架上,方便使用導航應用程序指引路線,不必手持或放在口袋中,提高騎行的安全性和便利性。
+                        </p>
+                        <p>
+                          <b>安全固定：</b>
+                          本店提供的手機支架是經過設計和測試的,能夠安全地固定客戶的手機在機車上,即使在行駛中也不會脫落。
+                        </p>
+                        <p>
+                          <b>易於安裝：</b>
+                          提及手機支架的安裝過程簡單快捷,您可以輕鬆自行安裝,無需專業技術或工具。
+                        </p>
+                        <p>
+                          <b>無隱藏費用：</b>
+                          這是一項完全免費的服務,您無需支付任何額外費用。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseNine"
+                      aria-expanded="false"
+                      aria-controls="collapseNine"
+                    >
+                      Q：
+                      <span> 請問貴店是否有提供免費遮陽裙? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseNine"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>
+                          有的！我們有提供免費遮陽裙,讓您在騎行時能夠保護皮膚免受陽光曝曬,提供更舒適的騎行體驗。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item rounded-0">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTen"
+                      aria-expanded="false"
+                      aria-controls="collapseTen"
+                    >
+                      Q：
+                      <span> 租車期間有提供道路救援服務嗎? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTen"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionQa"
+                  >
+                    <div class="accordion-body">
+                      <div class="accordion-a">
+                        <h3>A：</h3>
+                      </div>
+                      <div class="accordion-txt">
+                        <p>有的！本店道路救援服務如下：</p>
+                        <p>
+                          <b>範圍覆蓋：</b>舊台南市區皆可服務。(
+                          例：東區、安平區、中西區、南區、北區。)
+                        </p>
+                        <p>
+                          <b>救援內容：</b>非人為因素故障。(
+                          例：無故熄火、電瓶更換、車輛拖吊、大燈不亮。)
+                        </p>
+                        <p>
+                          <b>服務時間：</b>本店道路救援服務時間為白天<span
+                            >9:00至晚上22:00</span
+                          >
+                          ,客戶可以隨時撥打致電<sapn>06-2227000</sapn>或加入官方LINE<span
+                            >(@136cdckm) 「需加@」</span
+                          >
+                          即時處理。
+                        </p>
+                        <p>
+                          <b>專業人員：</b
+                          >救援隊伍由經驗豐富的專業人員組成,能夠快速有效地應對各種救援情況。
+                        </p>
+                        <p>
+                          <b>快速響應：</b>
+                          店救援隊伍將會迅速響應客戶的求助,盡快趕到故障地點提供幫助。
+                        </p>
+                        <p>
+                          <b>手續簡便：</b>
+                          讓您在故障情況下,只需撥打您提供的救援熱線,便能快速獲得幫助,無需繁瑣的手續。
+                        </p>
+                        <p>
+                          <b>客戶支援：</b>
+                          提供客戶支援服務,確保客戶在故障發生時能夠得到及時溝通和支援。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- 內文主區塊end -->
+        <!-- 桌機版copyright -->
+        <div class="section-copyright d-md-block d-none">
+          <p>
+            <span>Copyright 2024</span> &copy;國光機車出租 | 版權所有 Designed
+            by <a href="https://www.renu.com.tw/">Renu</a>
+          </p>
+        </div>
+        <!-- 手機板footer -->
+        <section class="phone-footer d-block d-md-none">
+          <div class="phone-footer-main">
+            <a href="#" class="d-block phone-footer-logo">
+              <img class="w100" src="./src/web/icon/logo.svg" alt="" />
+            </a>
+            <div class="phone-footer-qcode">
+              <img src="./src/phone/icon/qr.png" alt="" />
+            </div>
+            <div class="footer-profile d-flex flex-column">
+              <ul>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/tel.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">06-2227000</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">台南市北區北門路二段41號</a>
+                </li>
+                <li>
+                  <div class="profile-pic">
+                    <img src="./src/web/icon/add.svg" alt="" />
+                  </div>
+                  <a href="javascript:void(0)">
+                    星期一至日<br />
+                    早上 9:00 ~ 晚上 10:00
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="section-copyright d-md-none d-block">
+              <p>
+                Copyright 2024 &copy;國光機車出租
+                <br />
+                版權所有 | Designed by
+                <a href="https://www.renu.com.tw/"> Renu</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="drop-menu d-flex flex-column align-items-center">
+      <div class="phone-menu-close-btn" id="closeMenu">
+        <img src="./src/phone/icon/close.svg" alt="close btn" />
+      </div>
+      <div class="phone-menu-logo">
+        <img src="./src/phone/icon/logo.svg" alt="" />
+      </div>
+      <nav class="section-phone-meun">
+        <ul>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_about.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 關於國光 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_online.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 線上預約 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_place.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 台南景點介紹 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_evaluate.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 顧客好評 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_qa.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> Q&A </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_contact.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 聯絡我們 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+          <li>
+            <div class="nav-pic">
+              <img src="./src/web/icon/icon_sitmap.svg" alt="" />
+            </div>
+            <a href="javascript:void(0)"> 網站地圖 </a>
+          </li>
+          <div class="draw-dotted">
+            <img class="w-100" src="./src/phone/icon/line.svg" alt="" />
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- <script src="./js/scroll-top.js"></script> -->
+    <!-- swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+      //手機menu
+      const openBtn = document.getElementById("openMenu");
+      const closeBtn = document.getElementById("closeMenu");
+      const dropMenu = document.querySelector(".drop-menu");
+
+      openBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(0%)";
+      });
+
+      closeBtn.addEventListener("click", function () {
+        dropMenu.style.transform = "translateY(-101%)";
+      });
+    </script>
+  </body>
+</html>
