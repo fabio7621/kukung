@@ -5,6 +5,7 @@
     .bread-list {
       width: fit-content;
       margin-left: auto;
+      flex-wrap: wrap;
       li {
         font-size: 15px;
         font-weight: 500;
@@ -85,7 +86,7 @@
         li {
           font-size: 13px;
           & + li {
-            margin-left: 10px;
+            margin-left: 5px;
           }
           a {
             text-decoration: none;

@@ -302,7 +302,7 @@ body {
   right: 0;
   bottom: -10%;
   width: 56.0386vw;
-  min-width: 200px;
+  min-width: 150px;
 }
 .wrap .section-index-about .section-index-about-main .rideMotopic img {
   width: 100%;
@@ -724,8 +724,8 @@ body {
   .wrap .section-index-about .section-index-about-main .rideMotopic {
     right: -5%;
     bottom: -23%;
-    width: 350px;
-    min-width: 200px;
+    width: 18.22916vw;
+    min-width: 250px;
   }
   .wrap .section-index-about .section-index-about-main .rideMotopic img {
     width: 100%;
@@ -856,6 +856,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
+  flex-wrap: wrap;
 }
 .section-bread .section-bread-main .bread-list li {
   font-size: 15px;
@@ -934,7 +935,7 @@ body {
     font-size: 13px;
   }
   .section-bread .section-bread-main .bread-list li + li {
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .section-bread .section-bread-main .bread-list li a {
     text-decoration: none;
@@ -1279,7 +1280,7 @@ body {
 }
 .pro-inner-txt h3 {
   font-size: 1.554404vw;
-  font-weight: 600;
+  font-weight: 800;
   color: #505050;
   letter-spacing: 3px;
 }
@@ -1422,6 +1423,35 @@ li.nav-item.nav-item-title {
   margin-bottom: 0px importan;
 }
 
+@media (max-width: 1300px) {
+  .pro-inner-txt h3 {
+    font-size: 20px;
+  }
+  .pro-inner-txt .pro-inner-price {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    padding: 1em 0;
+    border-bottom: 1px dashed #1a1311;
+  }
+  .pro-inner-txt .pro-inner-price span {
+    color: #b2b2b2;
+    margin-right: 5em;
+  }
+  .pro-inner-txt .pro-inner-price p {
+    font-size: 15px;
+    color: #ef1d1d;
+  }
+  .pro-inner-txt .pro-inner-content {
+    padding: 1em 0;
+  }
+  .pro-inner-txt .pro-inner-content p {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+}
 @media (width < 992px) {
   /* inner-main */
   .nav-item-title button {
@@ -1439,12 +1469,12 @@ li.nav-item.nav-item-title {
   }
   .pro-inner-txt h3::after {
     width: 48.555048%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .pro-inner-txt .pro-inner-price {
     font-size: 20px;
     justify-content: space-between;
-    padding: 0;
+    padding-bottom: 1em;
   }
   .pro-inner-txt .pro-inner-price span {
     margin-right: 0em;
@@ -2237,7 +2267,7 @@ li.nav-item.nav-item-title {
 
 @media (max-width: 992px) {
   .sitemap-item + .sitemap-item {
-    border-left: 1px solid #c5c2c1;
+    border-left: none;
     margin-top: 50px;
   }
   .sitemap-item:nth-child(5n) {
