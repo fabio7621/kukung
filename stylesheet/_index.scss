@@ -1,11 +1,27 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
+  position: relative;
 }
 .sr-only {
   width: 1px;
   height: 1px;
   overflow: hidden;
   position: absolute;
+}
+.gogotop {
+  width: fit-content;
+  right: 20px;
+  top: 80vh;
+  z-index: 50;
+  .gogotop-item {
+    display: block;
+    width: 30px;
+    margin-bottom: 7px;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
 }
 .owl-theme .owl-nav {
   margin-top: 10px;
@@ -252,7 +268,7 @@ body {
           opacity: 0;
         }
         &:hover {
-          rotate: (5deg);
+          rotate: (-5deg);
         }
         a {
           border-radius: 35px;
@@ -271,6 +287,20 @@ body {
             color: #1a1311;
             right: 22px;
             bottom: 22px;
+          }
+        }
+        .product-index-price {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          padding: 1em 0;
+          justify-content: space-between;
+          span {
+            color: #b2b2b2;
+          }
+          p {
+            font-size: 18px;
+            color: #ef1d1d;
           }
         }
       }
@@ -452,6 +482,14 @@ body {
 }
 
 @media (min-width: 992px) {
+  .gogotop {
+    right: 50px;
+    top: 60vh;
+    .gogotop-item {
+      width: 50px;
+      margin-bottom: 14px;
+    }
+  }
   .owl-theme .owl-nav {
     margin-top: 10px;
     position: absolute;
@@ -795,7 +833,7 @@ body {
     }
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .swiper-pagination-bullet {
     width: 15px;
     height: 8px;

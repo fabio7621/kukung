@@ -7,6 +7,7 @@
 @import "../stylesheet/reset.css";
 body {
   font-family: "Noto Sans TC", sans-serif;
+  position: relative;
 }
 
 .sr-only {
@@ -14,6 +15,23 @@ body {
   height: 1px;
   overflow: hidden;
   position: absolute;
+}
+
+.gogotop {
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 20px;
+  top: 80vh;
+  z-index: 50;
+}
+.gogotop .gogotop-item {
+  display: block;
+  width: 30px;
+  margin-bottom: 7px;
+}
+.gogotop .gogotop-item img {
+  width: 100%;
+  vertical-align: middle;
 }
 
 .owl-theme .owl-nav {
@@ -270,7 +288,7 @@ body {
   opacity: 0;
 }
 .wrap .section-index-product-main .owl-bike .item:hover {
-  rotate: 5deg;
+  rotate: -5deg;
 }
 .wrap .section-index-product-main .owl-bike .item a {
   border-radius: 35px;
@@ -290,6 +308,20 @@ body {
   color: #1a1311;
   right: 22px;
   bottom: 22px;
+}
+.wrap .section-index-product-main .owl-bike .item .product-index-price {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 1em 0;
+  justify-content: space-between;
+}
+.wrap .section-index-product-main .owl-bike .item .product-index-price span {
+  color: #b2b2b2;
+}
+.wrap .section-index-product-main .owl-bike .item .product-index-price p {
+  font-size: 18px;
+  color: #ef1d1d;
 }
 .wrap .section-index-about .section-index-about-main {
   background-color: #fff;
@@ -459,6 +491,14 @@ body {
 }
 
 @media (min-width: 992px) {
+  .gogotop {
+    right: 50px;
+    top: 60vh;
+  }
+  .gogotop .gogotop-item {
+    width: 50px;
+    margin-bottom: 14px;
+  }
   .owl-theme .owl-nav {
     margin-top: 10px;
     position: absolute;
@@ -798,7 +838,7 @@ body {
     line-height: 1.6;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .swiper-pagination-bullet {
     width: 15px;
     height: 8px;
