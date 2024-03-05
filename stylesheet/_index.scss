@@ -574,7 +574,7 @@ body {
             }
             > a {
               margin: auto;
-              font-size: 20px;
+              font-size: 1.042vw;
               font-weight: 600;
               letter-spacing: 1px;
               color: #1a1311;
@@ -587,7 +587,8 @@ body {
         }
       }
       .nav-pic {
-        width: 30px;
+        width: 1.554404vw;
+        min-width: 20px;
         margin-right: 13px;
         img {
           width: 100%;
@@ -617,6 +618,7 @@ body {
             border-radius: 60px 0 0 60px;
             border: 1px solid #1a1311;
             border-right: none;
+            margin-right: -1px;
             .form-pic {
               width: 22px;
               img {
@@ -626,9 +628,10 @@ body {
             }
           }
           input {
-            width: 143px;
+            width: 7.447916vw;
+            max-width: 140px;
             height: 54px;
-            font-size: 20px;
+            font-size: 1.042vw;
             border: 1px solid #1a1311;
             border-left: none;
             border-radius: 0 60px 60px 0;
@@ -649,7 +652,8 @@ body {
             display: flex;
             margin-bottom: 18px;
             .profile-pic {
-              width: 19px;
+              width: 0.98958vw;
+              min-width: 15px;
               margin-right: 11px;
               img {
                 width: 100%;
@@ -658,7 +662,7 @@ body {
             }
             a {
               font-weight: 600;
-              font-size: 16px;
+              font-size: 0.84vw;
               color: #1a1311;
               letter-spacing: 0.8px;
               text-decoration: none;
