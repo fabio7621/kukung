@@ -122,7 +122,7 @@
       <!-- 桌機板 Nav選單 -->
       <section class="main-header d-lg-block d-md-none d-none">
         <div class="logobox w-100">
-          <a class="logo-pic d-block">
+          <a href="./index.html" class="logo-pic d-block">
             <img class="w-100" src="./src/web/icon/logo.svg" alt="logo" />
           </a>
         </div>
@@ -273,112 +273,115 @@
             <div class="section-product-nav d-lg-block d-md-none d-none">
               <ul class="d-md-flex d-none flex mx-auto">
                 <li>
-                  <a href="#">美　食</a>
+                  <a href="./food.html">美　食</a>
                 </li>
                 <li>
-                  <a href="#">景　點</a>
+                  <a href="./place.html">景　點</a>
                 </li>
                 <li>
-                  <a class="tainan-active" href="#">民　宿</a>
+                  <a class="tainan-active" href="./hotel.html">民　宿</a>
                 </li>
               </ul>
             </div>
-            <!-- 手機選單 -->
-            <div
-              class="accordion menu-list-phone accordion-flush w-100 d-block d-lg-none"
-              id="rwd-main-menu"
-            >
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed menu-list-title"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseMain"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseMain"
-                  >
-                    <p>分類目錄</p>
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseMain"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="menu-list-body accordion-body w-100 p-0">
-                    <div
-                      class="accordion rounded-0 border-0"
-                      id="accordionExample "
-                    >
-                      <!-- 1 -->
-                      <div class="accordion-item phone-menu-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button collapsed menu-list-item"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseFirst"
-                            aria-expanded="false"
-                            aria-controls="collapseFirst"
-                          >
-                            <p>美　食</p>
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseFirst"
-                          class="accordion-collapse collapse"
-                          data-bs-parent="#accordionExample"
-                        ></div>
-                      </div>
-
-                      <!-- 3 -->
-                      <div class="accordion-item phone-menu-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button collapsed menu-list-item"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            <p>景　點</p>
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          class="accordion-collapse collapse"
-                          data-bs-parent="#accordionExample"
-                        ></div>
-                      </div>
-                      <div class="accordion-item phone-menu-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button collapsed menu-list-item"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseThird"
-                            aria-expanded="false"
-                            aria-controls="collapseThird"
-                          >
-                            <p>民　宿</p>
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          class="accordion-collapse collapse"
-                          data-bs-parent="#accordionExample"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <!-- 手機選單 -->
+             <div
+             class="accordion menu-list-phone accordion-flush w-100 d-block d-lg-none"
+             id="rwd-main-menu"
+           >
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button
+                   class="accordion-button collapsed menu-list-title"
+                   type="button"
+                   data-bs-toggle="collapse"
+                   data-bs-target="#flush-collapseMain"
+                   aria-expanded="false"
+                   aria-controls="flush-collapseMain"
+                 >
+                   <p>分類目錄</p>
+                 </button>
+               </h2>
+               <div
+                 id="flush-collapseMain"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#accordionFlushExample"
+               >
+                 <div class="menu-list-body accordion-body w-100 p-0">
+                   <div
+                     class="accordion rounded-0 border-0"
+                     id="accordionExample "
+                   >
+                     <!-- 1 -->
+                     <div class="accordion-item phone-menu-item">
+                       <h2 class="accordion-header">
+                         <button
+                           class="accordion-button collapsed menu-list-item"
+                           type="button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#collapseFirst"
+                           aria-expanded="false"
+                           aria-controls="collapseFirst"
+                           onclick="window.location.href = './food.html'"
+                         >
+                           <p>美　食</p>
+                         </button>
+                       </h2>
+                       <div
+                         id="collapseFirst"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionExample"
+                       ></div>
+                     </div>
+                     <!-- 3 -->
+                     <div class="accordion-item phone-menu-item">
+                       <h2 class="accordion-header">
+                         <button
+                           class="accordion-button collapsed menu-list-item"
+                           type="button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#collapseTwo"
+                           aria-expanded="false"
+                           aria-controls="collapseTwo"
+                           onclick="window.location.href = './place.html'"
+                         >
+                           <p>景　點</p>
+                         </button>
+                       </h2>
+                       <div
+                         id="collapseTwo"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionExample"
+                       ></div>
+                     </div>
+                     <!-- 3 -->
+                     <div class="accordion-item phone-menu-item">
+                       <h2 class="accordion-header">
+                         <button
+                           class="accordion-button collapsed menu-list-item"
+                           type="button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#collapseThird"
+                           aria-expanded="false"
+                           aria-controls="collapseThird"
+                           onclick="window.location.href = './hotel.html'"
+                         >
+                           <p>民　宿</p>
+                         </button>
+                       </h2>
+                       <div
+                         id="collapseTwo"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionExample"
+                       ></div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
             </div>
             <div class="booking-list tainan-list row">
               <div class="booking-item col-12 col-md-4 mt-5">
-                <a href="#" class="d-block booking-item-pic">
+                <a href="./hotel-inner.html" class="d-block booking-item-pic">
                   <img src="./src/web/attractions/hotel/pic_1.png" />
                   <div class="position-absolute dark-book-two">
                     <div class="dark-book-pic">
@@ -393,7 +396,7 @@
                 <p class="text-center">阡陌錦町</p>
               </div>
               <div class="booking-item col-12 col-md-4 mt-5">
-                <a href="#" class="d-block booking-item-pic">
+                <a href="./hotel-inner.html" class="d-block booking-item-pic">
                   <img src="./src/web/attractions/hotel/pic_2.png" />
                   <div class="position-absolute dark-book-two">
                     <div class="dark-book-pic">
@@ -408,7 +411,7 @@
                 <p class="text-center">樂宅1960</p>
               </div>
               <div class="booking-item col-12 col-md-4 mt-5">
-                <a href="#" class="d-block booking-item-pic">
+                <a href="./hotel-inner.html" class="d-block booking-item-pic">
                   <img src="./src/web/attractions/hotel/pic_3.png" />
                   <div class="position-absolute dark-book-two">
                     <div class="dark-book-pic">
@@ -423,7 +426,7 @@
                 <p class="text-center">哇哈哈食樂宅</p>
               </div>
               <div class="booking-item col-12 col-md-4 mt-5">
-                <a href="#" class="d-block booking-item-pic">
+                <a href="./hotel-inner.html" class="d-block booking-item-pic">
                   <img src="./src/web/attractions/hotel/pic_4.png" />
                   <div class="position-absolute dark-book-two">
                     <div class="dark-book-pic">
@@ -438,7 +441,7 @@
                 <p class="text-center">聽故事台南民宿</p>
               </div>
               <div class="booking-item col-12 col-md-4 mt-5">
-                <a href="#" class="d-block booking-item-pic">
+                <a href="./hotel-inner.html" class="d-block booking-item-pic">
                   <img src="./src/web/attractions/hotel/pic_5.png" />
                   <div class="position-absolute dark-book-two">
                     <div class="dark-book-pic">
@@ -453,7 +456,7 @@
                 <p class="text-center">藏風民宿</p>
               </div>
               <div class="booking-item col-12 col-md-4 mt-5">
-                <a href="#" class="d-block booking-item-pic">
+                <a href="./hotel-inner.html" class="d-block booking-item-pic">
                   <img src="./src/web/attractions/hotel/pic_6.png" />
                   <div class="position-absolute dark-book-two">
                     <div class="dark-book-pic">
