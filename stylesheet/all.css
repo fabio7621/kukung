@@ -1498,7 +1498,7 @@ li.nav-item.nav-item-title {
     line-height: 1.6;
   }
 }
-@media (width < 992px) {
+@media (max-width: 992px) {
   /* inner-main */
   .nav-item-title button {
     font-size: 16px;
@@ -1508,17 +1508,17 @@ li.nav-item.nav-item-title {
     letter-spacing: 1.6px;
   }
   .pro-inner-txt h3 {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 800;
     letter-spacing: 4.5px;
     margin-top: 36px;
   }
   .pro-inner-txt h3::after {
-    width: 48.555048%;
+    width: 100%;
     margin-bottom: 0px;
   }
   .pro-inner-txt .pro-inner-price {
-    font-size: 20px;
+    font-size: 16px;
     justify-content: space-between;
     padding-bottom: 1em;
   }
@@ -1526,7 +1526,7 @@ li.nav-item.nav-item-title {
     margin-right: 0em;
   }
   .pro-inner-txt .pro-inner-price p {
-    font-size: 20px;
+    font-size: 16px;
   }
   .product-tab-content p {
     font-size: 20px;
@@ -2338,6 +2338,7 @@ li.nav-item.nav-item-title {
     width: -moz-fit-content;
     width: fit-content;
     padding-left: 13%;
+    margin-bottom: 0.3em;
   }
   .sitemap-item nav ul li:first-child {
     margin-bottom: 0.5em;
