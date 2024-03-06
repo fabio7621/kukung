@@ -2350,4 +2350,8 @@ li.nav-item.nav-item-title {
     letter-spacing: 0.1em;
     line-height: 1.6;
   }
+}
+.bi-caret-down-fill::before {
+  content: "\f229";
+  color: #fff;
 }/*# sourceMappingURL=all.css.map */

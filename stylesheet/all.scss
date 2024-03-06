@@ -14,3 +14,7 @@
 @import "../stylesheet/qa";
 @import "../stylesheet/contact";
 @import "../stylesheet/sitemap";
+.bi-caret-down-fill::before {
+  content: "\f229";
+  color: #fff;
+}
